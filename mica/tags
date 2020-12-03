@@ -1,0 +1,1235 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	416;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	419;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	422;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	425;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	429;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	431;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	433;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	437;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	440;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	443;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	448;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	451;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	454;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	459;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	462;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	465;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	468;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	401;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	404;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	407;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	410;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	414;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	416;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	418;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	422;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	425;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	428;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	433;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	436;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	439;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	444;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	447;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	450;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	453;"	d	file:
+BENCHMARK_MODE_ADD	src/microbench.c	/^    BENCHMARK_MODE_ADD = 0,$/;"	e	enum:_benchmark_mode_t	file:
+BENCHMARK_MODE_DELETE	src/microbench.c	/^    BENCHMARK_MODE_DELETE,$/;"	e	enum:_benchmark_mode_t	file:
+BENCHMARK_MODE_GET_1	src/microbench.c	/^    BENCHMARK_MODE_GET_1,$/;"	e	enum:_benchmark_mode_t	file:
+BENCHMARK_MODE_GET_HIT	src/microbench.c	/^    BENCHMARK_MODE_GET_HIT,$/;"	e	enum:_benchmark_mode_t	file:
+BENCHMARK_MODE_GET_MISS	src/microbench.c	/^    BENCHMARK_MODE_GET_MISS,$/;"	e	enum:_benchmark_mode_t	file:
+BENCHMARK_MODE_GET_SET_50	src/microbench.c	/^    BENCHMARK_MODE_GET_SET_50,$/;"	e	enum:_benchmark_mode_t	file:
+BENCHMARK_MODE_GET_SET_95	src/microbench.c	/^    BENCHMARK_MODE_GET_SET_95,$/;"	e	enum:_benchmark_mode_t	file:
+BENCHMARK_MODE_MAX	src/microbench.c	/^    BENCHMARK_MODE_MAX,$/;"	e	enum:_benchmark_mode_t	file:
+BENCHMARK_MODE_SET	src/microbench.c	/^    BENCHMARK_MODE_SET,$/;"	e	enum:_benchmark_mode_t	file:
+BENCHMARK_MODE_SET_1	src/microbench.c	/^    BENCHMARK_MODE_SET_1,$/;"	e	enum:_benchmark_mode_t	file:
+CHUNK	src/city.c	425;"	d	file:
+CITY_HASH_CRC_H_	src/citycrc.h	34;"	d
+CITY_HASH_H_	src/city.h	49;"	d
+CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/heejin\/Lighthouse\/mica\/build$/;"	m
+CMAKE_BINARY_DIR	build/src/Makefile	/^CMAKE_BINARY_DIR = \/home\/heejin\/Lighthouse\/mica\/build$/;"	m
+CMAKE_BINARY_DIR	build/src/perf_count/Makefile	/^CMAKE_BINARY_DIR = \/home\/heejin\/Lighthouse\/mica\/build$/;"	m
+CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/src/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/src/perf_count/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/heejin\/Lighthouse\/mica$/;"	m
+CMAKE_SOURCE_DIR	build/src/Makefile	/^CMAKE_SOURCE_DIR = \/home\/heejin\/Lighthouse\/mica$/;"	m
+CMAKE_SOURCE_DIR	build/src/perf_count/Makefile	/^CMAKE_SOURCE_DIR = \/home\/heejin\/Lighthouse\/mica$/;"	m
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	101;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	108;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	115;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	122;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	129;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	137;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	142;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	149;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	152;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	158;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	161;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	176;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	190;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	19;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	200;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	218;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	227;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	236;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	251;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	264;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	282;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	285;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	288;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	42;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	50;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	56;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	62;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	71;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	80;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	94;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	108;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	115;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	122;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	129;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	137;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	13;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	142;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	149;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	152;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	155;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	170;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	184;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	198;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	19;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	216;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	225;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	234;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	249;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	267;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	270;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	273;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	42;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	50;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	56;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	62;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	71;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	94;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	232;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	230;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	103;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	117;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	124;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	130;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	138;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	144;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	165;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	180;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	191;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	202;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	221;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	229;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	239;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	244;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	24;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	253;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	258;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	267;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	272;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	43;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	51;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	58;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	64;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	73;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	83;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	88;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	96;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	103;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	110;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	117;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	124;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	130;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	138;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	144;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	159;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	15;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	174;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	186;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	188;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	200;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	219;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	227;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	237;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	242;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	24;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	252;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	257;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	43;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	51;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	58;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	64;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	73;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	83;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	88;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	96;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	104;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	111;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	118;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	125;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	131;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	139;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	145;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	166;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	181;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	193;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	203;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	222;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	230;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	240;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	245;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	254;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	259;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	25;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	268;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	273;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	44;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	52;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	59;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	65;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	74;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	84;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	89;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	97;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	111;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	118;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	131;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	139;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	145;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	160;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	16;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	175;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	191;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	201;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	220;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	228;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	238;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	243;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	253;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	258;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	25;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	44;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	52;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	59;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	65;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	74;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	84;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	89;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	97;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	105;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	112;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	119;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	126;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	133;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	146;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	167;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	182;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	196;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	207;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	210;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	223;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	231;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	241;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	246;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	255;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	260;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	269;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	274;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	27;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	29;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	46;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	53;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	67;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	76;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	85;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	90;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	98;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	105;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	112;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	126;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	133;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	146;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	161;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	176;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	194;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	205;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	208;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	221;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	229;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	239;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	244;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	254;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	259;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	29;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	46;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	53;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	67;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	76;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	85;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	90;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	173;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	214;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	33;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	167;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	212;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	33;"	d	file:
+CONCURRENCY_MODE_CRCW	src/microbench.c	/^    CONCURRENCY_MODE_CRCW,  \/\/ not supported yet$/;"	e	enum:_concurrency_mode_t	file:
+CONCURRENCY_MODE_CRCWS	src/microbench.c	/^    CONCURRENCY_MODE_CRCWS,$/;"	e	enum:_concurrency_mode_t	file:
+CONCURRENCY_MODE_CREW	src/microbench.c	/^    CONCURRENCY_MODE_CREW,$/;"	e	enum:_concurrency_mode_t	file:
+CONCURRENCY_MODE_EREW	src/microbench.c	/^    CONCURRENCY_MODE_EREW = 0,$/;"	e	enum:_concurrency_mode_t	file:
+CRCW	build/gen_confs.py	/^class CRCW(EREW):$/;"	c
+CRCWS	build/gen_confs.py	/^class CRCWS(EREW):$/;"	c
+CREW	build/gen_confs.py	/^class CREW(EREW):$/;"	c
+CREW0	build/gen_confs.py	/^class CREW0(CREW):$/;"	c
+CXX_STD	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	534;"	d	file:
+CXX_STD	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	536;"	d	file:
+C_DIALECT	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	550;"	d	file:
+C_DIALECT	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	552;"	d	file:
+C_DIALECT	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	555;"	d	file:
+C_DIALECT	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	557;"	d	file:
+C_DIALECT	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	559;"	d	file:
+CityHash128	src/city.c	/^uint128 CityHash128(const char *s, size_t len) {$/;"	f
+CityHash128WithSeed	src/city.c	/^uint128 CityHash128WithSeed(const char *s, size_t len, uint128 seed) {$/;"	f
+CityHash64	src/city.c	/^uint64 CityHash64(const char *s, size_t len) {$/;"	f
+CityHash64WithSeed	src/city.c	/^uint64 CityHash64WithSeed(const char *s, size_t len, uint64 seed) {$/;"	f
+CityHash64WithSeeds	src/city.c	/^uint64 CityHash64WithSeeds(const char *s, size_t len,$/;"	f
+CityHashCrc128	src/city.c	/^uint128 CityHashCrc128(const char *s, size_t len) {$/;"	f
+CityHashCrc128WithSeed	src/city.c	/^uint128 CityHashCrc128WithSeed(const char *s, size_t len, uint128 seed) {$/;"	f
+CityHashCrc256	src/city.c	/^void CityHashCrc256(const char *s, size_t len, uint64 *result) {$/;"	f
+CityHashCrc256Long	src/city.c	/^static void CityHashCrc256Long(const char *s, size_t len,$/;"	f	file:
+CityHashCrc256Short	src/city.c	/^static void CityHashCrc256Short(const char *s, size_t len, uint64 *result) {$/;"	f	file:
+CityMurmur	src/city.c	/^static uint128 CityMurmur(const char *s, size_t len, uint128 seed) {$/;"	f	file:
+ClientConf	build/gen_confs.py	/^class ClientConf:$/;"	c
+ConcurrencyModel	build/gen_confs.py	/^class ConcurrencyModel:$/;"	c
+DEC	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	472;"	d	file:
+DEC	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	457;"	d	file:
+EQUALS	build/Makefile	/^EQUALS = =$/;"	m
+EQUALS	build/src/Makefile	/^EQUALS = =$/;"	m
+EQUALS	build/src/perf_count/Makefile	/^EQUALS = =$/;"	m
+EREW	build/gen_confs.py	/^class EREW(ConcurrencyModel):$/;"	c
+Fetch32	src/city.c	/^static uint32 Fetch32(const char *p) {$/;"	f	file:
+Fetch64	src/city.c	/^static uint64 Fetch64(const char *p) {$/;"	f	file:
+HEX	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	483;"	d	file:
+HEX	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	468;"	d	file:
+Hash128to64	src/city.c	/^static inline uint64 Hash128to64(const uint128 x) {$/;"	f	file:
+HashLen0to16	src/city.c	/^static uint64 HashLen0to16(const char *s, size_t len) {$/;"	f	file:
+HashLen16	src/city.c	/^static uint64 HashLen16(uint64 u, uint64 v) {$/;"	f	file:
+HashLen17to32	src/city.c	/^static uint64 HashLen17to32(const char *s, size_t len) {$/;"	f	file:
+HashLen33to64	src/city.c	/^static uint64 HashLen33to64(const char *s, size_t len) {$/;"	f	file:
+ID_VOID_MAIN	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
+LB	build/gen_confs.py	/^class LB(CREW):$/;"	c
+LIKELY	src/city.c	79;"	d	file:
+LIKELY	src/city.c	81;"	d	file:
+MEHCACHED_ADD	src/table.h	/^    MEHCACHED_ADD,$/;"	e	enum:_MEHCACHED_OPERATION
+MEHCACHED_ALIGNED	src/common.h	31;"	d
+MEHCACHED_ALLOC_DYNAMIC	src/config.h	45;"	d
+MEHCACHED_ALLOC_ID	src/table.h	78;"	d
+MEHCACHED_ALLOC_ID	src/table.h	80;"	d
+MEHCACHED_ALLOC_ID_MASK	src/table.h	77;"	d
+MEHCACHED_ALLOC_POOL	src/config.h	36;"	d
+MEHCACHED_ALWAYS_INLINE	src/common.h	29;"	d
+MEHCACHED_BEGIN	src/common.h	20;"	d
+MEHCACHED_BEGIN	src/common.h	23;"	d
+MEHCACHED_COLLECT_PER_PARTITION_LOAD	src/proto.h	38;"	d
+MEHCACHED_CONCURRENT	src/config.h	27;"	d
+MEHCACHED_CONCURRENT_ALLOC_WRITE	src/netbench_config.h	73;"	d
+MEHCACHED_CONCURRENT_TABLE_READ	src/netbench_config.h	71;"	d
+MEHCACHED_CONCURRENT_TABLE_WRITE	src/netbench_config.h	72;"	d
+MEHCACHED_DELETE	src/table.h	/^    MEHCACHED_DELETE,$/;"	e	enum:_MEHCACHED_OPERATION
+MEHCACHED_DYNAMIC_CLASS_INCREMENT	src/alloc_dynamic.h	29;"	d
+MEHCACHED_DYNAMIC_FREE	src/alloc_dynamic.c	22;"	d	file:
+MEHCACHED_DYNAMIC_INSUFFICIENT_SPACE	src/alloc_dynamic.h	31;"	d
+MEHCACHED_DYNAMIC_MAX_SIZE	src/alloc_dynamic.h	27;"	d
+MEHCACHED_DYNAMIC_MIN_SIZE	src/alloc_dynamic.h	26;"	d
+MEHCACHED_DYNAMIC_NUM_CLASSES	src/alloc_dynamic.h	28;"	d
+MEHCACHED_DYNAMIC_OCCUPIED	src/alloc_dynamic.c	23;"	d	file:
+MEHCACHED_DYNAMIC_TAG_SIZE	src/alloc_dynamic.c	25;"	d	file:
+MEHCACHED_DYNAMIC_TAG_STATUS	src/alloc_dynamic.c	26;"	d	file:
+MEHCACHED_DYNAMIC_TAG_VEC	src/alloc_dynamic.c	27;"	d	file:
+MEHCACHED_ENABLE_THROTTLING	src/proto.h	25;"	d
+MEHCACHED_END	src/common.h	21;"	d
+MEHCACHED_END	src/common.h	24;"	d
+MEHCACHED_ERROR	src/table.h	/^    MEHCACHED_ERROR,$/;"	e	enum:_MEHCACHED_RESULT
+MEHCACHED_EXIST	src/table.h	/^    MEHCACHED_EXIST,$/;"	e	enum:_MEHCACHED_RESULT
+MEHCACHED_FULL	src/table.h	/^    MEHCACHED_FULL,$/;"	e	enum:_MEHCACHED_RESULT
+MEHCACHED_GET	src/table.h	/^    MEHCACHED_GET,$/;"	e	enum:_MEHCACHED_OPERATION
+MEHCACHED_INCREMENT	src/table.h	/^    MEHCACHED_INCREMENT,$/;"	e	enum:_MEHCACHED_OPERATION
+MEHCACHED_ITEMS_PER_BUCKET	src/table.h	30;"	d
+MEHCACHED_ITEM_OFFSET	src/table.h	88;"	d
+MEHCACHED_ITEM_OFFSET_MASK	src/table.h	84;"	d
+MEHCACHED_ITEM_OFFSET_MASK	src/table.h	86;"	d
+MEHCACHED_ITEM_VEC	src/table.h	91;"	d
+MEHCACHED_ITEM_VEC	src/table.h	93;"	d
+MEHCACHED_KEY_LENGTH	src/table.h	104;"	d
+MEHCACHED_KEY_MASK	src/table.h	103;"	d
+MEHCACHED_KV_LENGTH_VEC	src/table.h	109;"	d
+MEHCACHED_MALLOC_INSUFFICIENT_SPACE	src/alloc_malloc.h	22;"	d
+MEHCACHED_MAX_BATCH_SIZE	src/proto.h	32;"	d
+MEHCACHED_MAX_HOT_ITEMS	src/netbench_config.h	24;"	d
+MEHCACHED_MAX_KEY_LENGTH	src/table.h	24;"	d
+MEHCACHED_MAX_LCORES	src/net_common.h	21;"	d
+MEHCACHED_MAX_NUMA_NODES	src/net_common.h	22;"	d
+MEHCACHED_MAX_PARTITIONS	src/netbench_config.h	22;"	d
+MEHCACHED_MAX_PKT_BURST	src/net_common.c	33;"	d	file:
+MEHCACHED_MAX_POOLS	src/table.h	117;"	d
+MEHCACHED_MAX_PORTS	src/net_common.h	24;"	d
+MEHCACHED_MAX_QUEUES	src/net_common.h	25;"	d
+MEHCACHED_MAX_THREADS	src/netbench_config.h	21;"	d
+MEHCACHED_MAX_VALUE_LENGTH	src/table.h	25;"	d
+MEHCACHED_MAX_WORKLOAD_THREADS	src/netbench_config.h	23;"	d
+MEHCACHED_MBUF_ENTRY_SIZE	src/net_common.c	30;"	d	file:
+MEHCACHED_MBUF_SIZE	src/net_common.c	31;"	d	file:
+MEHCACHED_MINIMUM_POOL_SIZE	src/alloc_pool.h	25;"	d
+MEHCACHED_MTH_THRESHOLD_FIFO	src/table.h	38;"	d
+MEHCACHED_MTH_THRESHOLD_LRU	src/table.h	39;"	d
+MEHCACHED_NOOP_READ	src/table.h	/^    MEHCACHED_NOOP_READ = 0,$/;"	e	enum:_MEHCACHED_OPERATION
+MEHCACHED_NOOP_WRITE	src/table.h	/^    MEHCACHED_NOOP_WRITE,$/;"	e	enum:_MEHCACHED_OPERATION
+MEHCACHED_NOT_FOUND	src/table.h	/^    MEHCACHED_NOT_FOUND,$/;"	e	enum:_MEHCACHED_RESULT
+MEHCACHED_NOT_PROCESSED	src/table.h	/^    MEHCACHED_NOT_PROCESSED,$/;"	e	enum:_MEHCACHED_RESULT
+MEHCACHED_OK	src/table.h	/^    MEHCACHED_OK = 0,$/;"	e	enum:_MEHCACHED_RESULT
+MEHCACHED_OPERATION	src/table.h	/^} MEHCACHED_OPERATION;$/;"	t	typeref:enum:_MEHCACHED_OPERATION
+MEHCACHED_PARTIAL_VALUE	src/table.h	/^    MEHCACHED_PARTIAL_VALUE,$/;"	e	enum:_MEHCACHED_RESULT
+MEHCACHED_RESULT	src/table.h	/^} MEHCACHED_RESULT;$/;"	t	typeref:enum:_MEHCACHED_RESULT
+MEHCACHED_ROUNDUP1M	src/util.h	35;"	d
+MEHCACHED_ROUNDUP2M	src/util.h	36;"	d
+MEHCACHED_ROUNDUP4K	src/util.h	34;"	d
+MEHCACHED_ROUNDUP64	src/util.h	33;"	d
+MEHCACHED_ROUNDUP8	src/util.h	32;"	d
+MEHCACHED_RX_HTHRESH	src/net_common.c	36;"	d	file:
+MEHCACHED_RX_PTHRESH	src/net_common.c	35;"	d	file:
+MEHCACHED_RX_WTHRESH	src/net_common.c	37;"	d	file:
+MEHCACHED_SET	src/table.h	/^    MEHCACHED_SET,$/;"	e	enum:_MEHCACHED_OPERATION
+MEHCACHED_SHM_MAX_ENTRIES	src/shm.c	62;"	d	file:
+MEHCACHED_SHM_MAX_MAPPINGS	src/shm.c	63;"	d	file:
+MEHCACHED_SHM_MAX_PAGES	src/shm.c	61;"	d	file:
+MEHCACHED_SINGLE_ALLOC	src/table.h	41;"	d
+MEHCACHED_STAT_DEC	src/table.h	45;"	d
+MEHCACHED_STAT_INC	src/table.h	44;"	d
+MEHCACHED_TAG	src/table.h	74;"	d
+MEHCACHED_TAG_MASK	src/table.h	73;"	d
+MEHCACHED_TEST	src/table.h	/^    MEHCACHED_TEST,$/;"	e	enum:_MEHCACHED_OPERATION
+MEHCACHED_TX_HTHRESH	src/net_common.c	40;"	d	file:
+MEHCACHED_TX_PTHRESH	src/net_common.c	39;"	d	file:
+MEHCACHED_TX_WTHRESH	src/net_common.c	41;"	d	file:
+MEHCACHED_UNUSED	src/common.h	27;"	d
+MEHCACHED_VALUE_LENGTH	src/table.h	107;"	d
+MEHCACHED_VALUE_MASK	src/table.h	106;"	d
+MEHCACHED_WARN_UNUSED_RESULT	src/common.h	28;"	d
+MEHCAHCED_DYNAMIC_OVERHEAD	src/alloc_dynamic.h	24;"	d
+NETBENCH_SERVER_MEHCACHED	src/netbench_server.c	41;"	d	file:
+PERF_COUNT_TYPE	src/perf_count/perf_count.h	/^enum PERF_COUNT_TYPE $/;"	g
+PERF_COUNT_TYPE_HW_BRANCH_INSTRUCTIONS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_BRANCH_INSTRUCTIONS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_BRANCH_MISSES	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_BRANCH_MISSES,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_BUS_CYCLES	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_BUS_CYCLES,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_DTLB_PREFETCH_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_DTLB_PREFETCH_ACCESS,		\/\/ not working?$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_DTLB_PREFETCH_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_DTLB_PREFETCH_MISS,		\/\/ not working?$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_DTLB_READ_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_DTLB_READ_ACCESS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_DTLB_READ_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_DTLB_READ_MISS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_DTLB_WRITE_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_DTLB_WRITE_ACCESS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_DTLB_WRITE_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_DTLB_WRITE_MISS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_ITLB_PREFETCH_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_ITLB_PREFETCH_ACCESS,		\/\/ not working?$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_ITLB_PREFETCH_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_ITLB_PREFETCH_MISS,		\/\/ not working?$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_ITLB_READ_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_ITLB_READ_ACCESS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_ITLB_READ_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_ITLB_READ_MISS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_ITLB_WRITE_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_ITLB_WRITE_ACCESS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_ITLB_WRITE_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_ITLB_WRITE_MISS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_L1D_PREFETCH_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_L1D_PREFETCH_ACCESS,		\/\/ not working?$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_L1D_PREFETCH_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_L1D_PREFETCH_MISS,			\/\/ not working?$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_L1D_READ_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_L1D_READ_ACCESS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_L1D_READ_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_L1D_READ_MISS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_L1D_WRITE_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_L1D_WRITE_ACCESS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_L1D_WRITE_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_L1D_WRITE_MISS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_L1I_PREFETCH_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_L1I_PREFETCH_ACCESS,		\/\/ not working?$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_L1I_PREFETCH_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_L1I_PREFETCH_MISS,			\/\/ not working?$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_L1I_READ_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_L1I_READ_ACCESS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_L1I_READ_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_L1I_READ_MISS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_L1I_WRITE_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_L1I_WRITE_ACCESS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_L1I_WRITE_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_L1I_WRITE_MISS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_LL_PREFETCH_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_LL_PREFETCH_ACCESS,		\/\/ not working?$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_LL_PREFETCH_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_LL_PREFETCH_MISS,			\/\/ not working?$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_LL_READ_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_LL_READ_ACCESS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_LL_READ_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_LL_READ_MISS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_LL_WRITE_ACCESS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_LL_WRITE_ACCESS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_LL_WRITE_MISS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_LL_WRITE_MISS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_MISSES	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_MISSES,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CACHE_REFERENCES	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CACHE_REFERENCES,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_CPU_CYCLES	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_CPU_CYCLES,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_HW_INSTRUCTIONS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_HW_INSTRUCTIONS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_INVALID	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_INVALID = -1,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_MAX	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_MAX,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_SW_ALIGNMENT_FAULTS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_SW_ALIGNMENT_FAULTS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_SW_CONTEXT_SWITCHES	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_SW_CONTEXT_SWITCHES,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_SW_CPU_CLOCK	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_SW_CPU_CLOCK,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_SW_CPU_MIGRATIONS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_SW_CPU_MIGRATIONS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_SW_EMULATION_FAULTS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_SW_EMULATION_FAULTS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_SW_PAGE_FAULTS	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_SW_PAGE_FAULTS,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_SW_PAGE_FAULTS_MAJ	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_SW_PAGE_FAULTS_MAJ,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_SW_PAGE_FAULTS_MIN	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_SW_PAGE_FAULTS_MIN,$/;"	e	enum:PERF_COUNT_TYPE
+PERF_COUNT_TYPE_SW_TASK_CLOCK	src/perf_count/perf_count.h	/^	PERF_COUNT_TYPE_SW_TASK_CLOCK,$/;"	e	enum:PERF_COUNT_TYPE
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	313;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	316;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	319;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	322;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	325;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	328;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	331;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	334;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	337;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	340;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	343;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	346;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	349;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	352;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	355;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	358;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	361;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	364;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	367;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	370;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	373;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	376;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	379;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	382;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	385;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	389;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	392;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	395;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	398;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	401;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	405;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	298;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	301;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	304;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	307;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	310;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	313;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	316;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	319;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	322;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	325;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	328;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	331;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	334;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	337;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	340;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	343;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	346;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	349;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	352;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	355;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	358;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	361;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	364;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	367;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	370;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	374;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	377;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	380;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	383;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	386;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	390;"	d	file:
+PREFETCH_GAP	src/microbench.c	36;"	d	file:
+PREFETCH_PIPELINE	src/microbench.c	37;"	d	file:
+PrePopulationConf	build/gen_confs.py	/^class PrePopulationConf:$/;"	c
+RM	build/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	build/src/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	build/src/perf_count/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RTE_TEST_RX_DESC_DEFAULT	src/net_common.c	43;"	d	file:
+RTE_TEST_TX_DESC_DEFAULT	src/net_common.c	44;"	d	file:
+RX_SAMPLE_RATE	src/netbench_client.c	39;"	d	file:
+Rotate	src/city.c	/^static uint64 Rotate(uint64 val, int shift) {$/;"	f	file:
+RotateByAtLeast1	src/city.c	/^static uint64 RotateByAtLeast1(uint64 val, int shift) {$/;"	f	file:
+SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build/src/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build/src/perf_count/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SIMULATE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	163;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	178;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	21;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	157;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	172;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	170;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	185;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	37;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	164;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	179;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	37;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	171;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	186;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	38;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	165;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	180;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	38;"	d	file:
+STRINGIFY	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	309;"	d	file:
+STRINGIFY	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	294;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	308;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	293;"	d	file:
+SUFFIXES	build/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build/src/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build/src/perf_count/Makefile	/^SUFFIXES =$/;"	m
+ServerConf	build/gen_confs.py	/^class ServerConf:$/;"	c
+ShiftMix	src/city.c	/^static uint64 ShiftMix(uint64 val) {$/;"	f	file:
+UNALIGNED_LOAD32	src/city.c	/^static uint32 UNALIGNED_LOAD32(const char *p) {$/;"	f	file:
+UNALIGNED_LOAD64	src/city.c	/^static uint64 UNALIGNED_LOAD64(const char *p) {$/;"	f	file:
+USE_PREFETCHING	src/microbench.c	35;"	d	file:
+USE_STAGE_GAP	src/netbench_server.c	339;"	d	file:
+Uint128High64	src/city.h	65;"	d
+Uint128Low64	src/city.h	64;"	d
+WeakHashLen32WithSeeds	src/city.c	/^uint128 WeakHashLen32WithSeeds($/;"	f
+WeakHashLen32WithSeeds6	src/city.c	/^uint128 WeakHashLen32WithSeeds6($/;"	f
+WorkloadConf	build/gen_confs.py	/^class WorkloadConf:$/;"	c
+_MEHCACHED_OPERATION	src/table.h	/^typedef enum _MEHCACHED_OPERATION$/;"	g
+_MEHCACHED_RESULT	src/table.h	/^typedef enum _MEHCACHED_RESULT$/;"	g
+__PERF_COUNT__	src/perf_count/perf_count.h	16;"	d
+__init__	build/gen_confs.py	/^    def __init__(self, client_name):$/;"	m	class:ClientConf
+__init__	build/gen_confs.py	/^    def __init__(self, client_name):$/;"	m	class:WorkloadConf
+__init__	build/gen_confs.py	/^    def __init__(self, num_hot_items, zipf, get_ratio):$/;"	m	class:LB
+__init__	build/gen_confs.py	/^    def __init__(self, server_name):$/;"	m	class:PrePopulationConf
+__init__	build/gen_confs.py	/^    def __init__(self, server_name):$/;"	m	class:ServerConf
+__rte_cache_aligned	src/net_common.c	/^} __rte_cache_aligned;$/;"	v	typeref:struct:mehcached_queue_state
+__rte_cache_aligned	src/netbench_client.c	/^} __rte_cache_aligned;$/;"	v	typeref:struct:client_state
+__rte_cache_aligned	src/netbench_server.c	/^    struct rte_ring *soft_fdir_mailbox[MEHCACHED_MAX_NUMA_NODES] __rte_cache_aligned;$/;"	m	struct:server_state	typeref:struct:server_state::soft_fdir_mailbox	file:
+__rte_cache_aligned	src/netbench_server.c	/^} __rte_cache_aligned;$/;"	v	typeref:struct:server_state
+_benchmark_mode_t	src/microbench.c	/^typedef enum _benchmark_mode_t$/;"	g	file:
+_concurrency_mode_t	src/microbench.c	/^typedef enum _concurrency_mode_t$/;"	g	file:
+_uint128	src/city.h	/^struct _uint128 {$/;"	s
+add_hot_item	build/gen_confs.py	/^    def add_hot_item(self, key_hash, thread_id):$/;"	m	class:ServerConf
+add_partition	build/gen_confs.py	/^    def add_partition(self, num_items, alloc_size, concurrent_table_read, concurrent_table_write, concurrent_alloc_write, thread_id, mth_threshold):$/;"	m	class:ServerConf
+add_port	build/gen_confs.py	/^    def add_port(self, mac_addr, ip_addr):$/;"	m	class:ClientConf
+add_port	build/gen_confs.py	/^    def add_port(self, mac_addr, ip_addr):$/;"	m	class:ServerConf
+add_thread	build/gen_confs.py	/^    def add_thread(self):$/;"	m	class:ClientConf
+add_thread	build/gen_confs.py	/^    def add_thread(self, port_ids):$/;"	m	class:ServerConf
+add_thread	build/gen_confs.py	/^    def add_thread(self, port_ids, server_name, partition_mode, num_items, key_length, value_length, zipf_theta, get_ratio, put_ratio, increment_ratio, batch_size, num_operations, duration):$/;"	m	class:WorkloadConf
+addr	src/shm.c	/^	void *addr;$/;"	m	struct:mehcached_shm_mapping	file:
+addr	src/shm.c	/^	void *addr;$/;"	m	struct:mehcached_shm_page	file:
+alloc	src/table.h	/^    struct mehcached_dynamic alloc;$/;"	m	struct:mehcached_table	typeref:struct:mehcached_table::mehcached_dynamic
+alloc	src/table.h	/^    struct mehcached_malloc alloc;$/;"	m	struct:mehcached_table	typeref:struct:mehcached_table::mehcached_malloc
+alloc	src/table.h	/^    struct mehcached_pool alloc[MEHCACHED_MAX_POOLS];$/;"	m	struct:mehcached_table	typeref:struct:mehcached_table::mehcached_pool
+alloc_id_mask	src/table.h	/^    uint8_t alloc_id_mask;$/;"	m	struct:mehcached_table
+alloc_item	src/table.h	/^    struct mehcached_alloc_item alloc_item;$/;"	m	struct:mehcached_item	typeref:struct:mehcached_item::mehcached_alloc_item
+alloc_size	src/netbench_config.h	/^	uint64_t alloc_size;$/;"	m	struct:mehcached_server_partition_conf
+alpha	src/zipf.h	/^	double alpha;		\/\/ only depends on theta$/;"	m	struct:zipf_gen_state
+batch_size	src/netbench_config.h	/^	uint8_t batch_size;$/;"	m	struct:mehcached_workload_thread_conf
+benchmark	src/microbench.c	/^benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double mth_threshold)$/;"	f
+benchmark_mode	src/microbench.c	/^    benchmark_mode_t benchmark_mode;$/;"	m	struct:proc_arg	file:
+benchmark_mode_t	src/microbench.c	/^} benchmark_mode_t;$/;"	t	typeref:enum:_benchmark_mode_t	file:
+benchmark_perf_count_free	src/microbench.c	/^benchmark_perf_count_free(perf_count_t pc)$/;"	f
+benchmark_perf_count_init	src/microbench.c	/^benchmark_perf_count_init()$/;"	f
+benchmark_perf_count_start	src/microbench.c	/^benchmark_perf_count_start(perf_count_t pc)$/;"	f
+benchmark_perf_count_stop	src/microbench.c	/^benchmark_perf_count_stop(perf_count_t pc)$/;"	f
+benchmark_proc	src/microbench.c	/^benchmark_proc(void *arg)$/;"	f
+bool	src/basic_types.h	/^typedef int bool;$/;"	t
+bswap_32	src/city.c	59;"	d	file:
+bswap_32	src/city.c	65;"	d	file:
+bswap_64	src/city.c	60;"	d	file:
+bswap_64	src/city.c	66;"	d	file:
+bucket	src/table.h	/^    struct mehcached_bucket *bucket;$/;"	m	struct:mehcached_prefetch_state	typeref:struct:mehcached_prefetch_state::mehcached_bucket
+buckets	src/table.h	/^    struct mehcached_bucket *buckets;$/;"	m	struct:mehcached_table	typeref:struct:mehcached_table::mehcached_bucket
+bytes_rx	src/netbench_client.c	/^    uint64_t bytes_rx;$/;"	m	struct:client_state	file:
+bytes_rx	src/netbench_server.c	/^    uint64_t bytes_rx;$/;"	m	struct:server_state	file:
+bytes_tx	src/netbench_client.c	/^    uint64_t bytes_tx;$/;"	m	struct:client_state	file:
+bytes_tx	src/netbench_server.c	/^    uint64_t bytes_tx;$/;"	m	struct:server_state	file:
+cleanup	src/table.h	/^        size_t cleanup;$/;"	m	struct:mehcached_table::__anon2
+clear_huge_pages	scripts/setup_dkdp_env.sh	/^clear_huge_pages()$/;"	f
+client_conf	src/netbench_client.c	/^    struct mehcached_client_conf *client_conf;$/;"	m	struct:client_state	typeref:struct:client_state::mehcached_client_conf	file:
+client_state	src/netbench_client.c	/^struct client_state$/;"	s	file:
+cmd	build/run_analysis_for_conf.py	/^            cmd = '.\/netbench_analysis %d %f %f %d > analysis_%d_%s_%.2f' % (num_hot_items, zipf[1], get_ratio, isolated_server_numa_nodes, num_hot_items, zipf[0], get_ratio)$/;"	v
+concurrency_mode	src/microbench.c	/^    concurrency_mode_t concurrency_mode;$/;"	m	struct:proc_arg	file:
+concurrency_mode_t	src/microbench.c	/^} concurrency_mode_t;$/;"	t	typeref:enum:_concurrency_mode_t	file:
+concurrent_access_mode	src/alloc_dynamic.h	/^    uint8_t concurrent_access_mode;$/;"	m	struct:mehcached_dynamic
+concurrent_access_mode	src/alloc_pool.h	/^    uint8_t concurrent_access_mode;$/;"	m	struct:mehcached_pool
+concurrent_access_mode	src/table.h	/^    uint8_t concurrent_access_mode;$/;"	m	struct:mehcached_table
+concurrent_alloc_write	build/gen_confs.py	/^    def concurrent_alloc_write(self, partition_id): pass$/;"	m	class:ConcurrencyModel
+concurrent_alloc_write	build/gen_confs.py	/^    def concurrent_alloc_write(self, partition_id): return 0$/;"	m	class:EREW
+concurrent_alloc_write	build/gen_confs.py	/^    def concurrent_alloc_write(self, partition_id): return 1$/;"	m	class:CRCWS
+concurrent_alloc_write	src/netbench_config.h	/^	uint8_t concurrent_alloc_write;$/;"	m	struct:mehcached_server_partition_conf
+concurrent_table_read	build/gen_confs.py	/^    def concurrent_table_read(self, partition_id): pass$/;"	m	class:ConcurrencyModel
+concurrent_table_read	build/gen_confs.py	/^    def concurrent_table_read(self, partition_id): return 0$/;"	m	class:EREW
+concurrent_table_read	build/gen_confs.py	/^    def concurrent_table_read(self, partition_id): return 1$/;"	m	class:CRCW
+concurrent_table_read	build/gen_confs.py	/^    def concurrent_table_read(self, partition_id): return 1$/;"	m	class:CRCWS
+concurrent_table_read	build/gen_confs.py	/^    def concurrent_table_read(self, partition_id): return 1$/;"	m	class:CREW
+concurrent_table_read	src/netbench_config.h	/^	uint8_t concurrent_table_read;$/;"	m	struct:mehcached_server_partition_conf
+concurrent_table_write	build/gen_confs.py	/^    def concurrent_table_write(self, partition_id): pass$/;"	m	class:ConcurrencyModel
+concurrent_table_write	build/gen_confs.py	/^    def concurrent_table_write(self, partition_id): return 0$/;"	m	class:EREW
+concurrent_table_write	build/gen_confs.py	/^    def concurrent_table_write(self, partition_id): return 1$/;"	m	class:CRCW
+concurrent_table_write	build/gen_confs.py	/^    def concurrent_table_write(self, partition_id): return 1$/;"	m	class:CRCWS
+concurrent_table_write	src/netbench_config.h	/^	uint8_t concurrent_table_write;$/;"	m	struct:mehcached_server_partition_conf
+const	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
+constr_state_c	src/netbench_client.c	/^	struct packet_construction_state constr_state_c[MEHCACHED_MAX_PARTITIONS];$/;"	m	struct:client_state	typeref:struct:client_state::packet_construction_state	file:
+constr_state_e	src/netbench_client.c	/^	struct packet_construction_state constr_state_e[MEHCACHED_MAX_PARTITIONS];$/;"	m	struct:client_state	typeref:struct:client_state::packet_construction_state	file:
+constr_state_h	src/netbench_client.c	/^	struct packet_construction_state constr_state_h[MEHCACHED_MAX_HOT_ITEMS];$/;"	m	struct:client_state	typeref:struct:client_state::packet_construction_state	file:
+count	src/table.h	/^        size_t count;$/;"	m	struct:mehcached_table::__anon2
+counters	src/perf_count/perf_count.c	/^	uint64_t *counters;$/;"	m	struct:perf_count_ctx	file:
+cpu_mode	src/netbench_client.c	/^    int cpu_mode;$/;"	m	struct:client_state	file:
+cpu_mode	src/netbench_server.c	/^    int cpu_mode;$/;"	m	struct:server_state	file:
+create_mnt_huge	scripts/setup_dkdp_env.sh	/^create_mnt_huge()$/;"	f
+data	src/alloc.h	/^    uint8_t data[0];$/;"	m	struct:mehcached_alloc_item
+data	src/alloc_dynamic.h	/^    uint8_t *data;	\/\/ the base address of the reserved memory$/;"	m	struct:mehcached_dynamic
+data	src/alloc_pool.h	/^    uint8_t *data;$/;"	m	struct:mehcached_pool
+data	src/proto.h	/^    uint8_t data[0];$/;"	m	struct:mehcached_batch_packet
+data	src/table.h	/^    uint8_t data[0];$/;"	m	struct:mehcached_item
+dbl_n	src/zipf.h	/^	double dbl_n;$/;"	m	struct:zipf_gen_state
+delete_found	src/table.h	/^        size_t delete_found;$/;"	m	struct:mehcached_table::__anon2
+delete_notfound	src/table.h	/^        size_t delete_notfound;$/;"	m	struct:mehcached_table::__anon2
+duration	src/netbench_config.h	/^	double duration;$/;"	m	struct:mehcached_workload_thread_conf
+entry_id	src/shm.c	/^	size_t entry_id;$/;"	m	struct:mehcached_shm_mapping	file:
+eta	src/zipf.h	/^	double eta;$/;"	m	struct:zipf_gen_state
+events	src/perf_count/perf_count.c	/^	struct perf_event_attr *events;$/;"	m	struct:perf_count_ctx	typeref:struct:perf_count_ctx::perf_event_attr	file:
+exiting	src/netbench_client.c	/^static volatile bool exiting = false;$/;"	v	file:
+exiting	src/netbench_server.c	/^static volatile bool exiting = false;$/;"	v	file:
+expire_time	src/table.h	/^    uint32_t expire_time;$/;"	m	struct:mehcached_item
+expire_time	src/table.h	/^    uint32_t expire_time;$/;"	m	struct:mehcached_request
+extra_buckets	src/table.h	/^    struct mehcached_bucket *extra_buckets; \/\/ = (buckets + num_buckets); extra_buckets[0] is not used because index 0 indicates "no more extra bucket"$/;"	m	struct:mehcached_table	typeref:struct:mehcached_table::mehcached_bucket
+false	src/basic_types.h	22;"	d
+fds	src/perf_count/perf_count.c	/^	int *fds;$/;"	m	struct:perf_count_ctx	file:
+features	build/CMakeFiles/feature_tests.c	/^  const char features[] = {"\\n"$/;"	v
+features	build/CMakeFiles/feature_tests.cxx	/^  const char features[] = {"\\n"$/;"	v
+first	src/city.h	/^  uint64 first;$/;"	m	struct:_uint128
+free_head	src/alloc_dynamic.h	/^    uint8_t *free_head[MEHCACHED_DYNAMIC_NUM_CLASSES];	\/\/ the head free pointer of each class$/;"	m	struct:mehcached_dynamic
+gen_state	src/netbench_client.c	/^	struct zipf_gen_state gen_state;$/;"	m	struct:client_state	typeref:struct:client_state::zipf_gen_state	file:
+get_found	src/table.h	/^        size_t get_found;$/;"	m	struct:mehcached_table::__anon2
+get_notfound	src/table.h	/^        size_t get_notfound;$/;"	m	struct:mehcached_table::__anon2
+get_ratio	src/netbench_config.h	/^	double get_ratio;$/;"	m	struct:mehcached_workload_thread_conf
+grep_meminfo	scripts/setup_dkdp_env.sh	/^grep_meminfo()$/;"	f
+hash	src/hash.h	/^static uint64_t hash(const uint8_t *key, size_t len)$/;"	f
+hash_md4	src/hash.h	/^static uint64_t hash_md4(const uint8_t *key, size_t len)$/;"	f
+head	src/alloc_pool.h	/^    uint64_t head;  \/\/ start offset of items$/;"	m	struct:mehcached_pool
+head	src/table.h	/^        uint32_t head;   \/\/ 1-base; 0 = no extra bucket$/;"	m	struct:mehcached_table::__anon1
+header	src/proto.h	/^	uint8_t header[sizeof(struct ether_hdr) + sizeof(struct ipv4_hdr) + sizeof(struct udp_hdr)];$/;"	m	struct:mehcached_batch_packet
+header_template	src/netbench_client.c	/^	uint8_t header_template[sizeof(struct ether_hdr) + sizeof(struct ipv4_hdr) + sizeof(struct udp_hdr)];$/;"	m	struct:client_state	file:
+hot_item_hash	src/netbench_client.c	/^	struct mehcached_hot_item_hash hot_item_hash;$/;"	m	struct:client_state	typeref:struct:client_state::mehcached_hot_item_hash	file:
+hot_item_hash	src/netbench_server.c	/^    struct mehcached_hot_item_hash hot_item_hash;$/;"	m	struct:server_state	typeref:struct:server_state::mehcached_hot_item_hash	file:
+hot_items	build/gen_confs.py	/^    def hot_items(self): pass$/;"	m	class:ConcurrencyModel
+hot_items	build/gen_confs.py	/^    def hot_items(self): return []$/;"	m	class:EREW
+hot_items	build/gen_confs.py	/^    def hot_items(self): return self.hot_item_list$/;"	m	class:LB
+hot_items	src/netbench_config.h	/^	struct mehcached_server_hot_item_conf hot_items[MEHCACHED_MAX_HOT_ITEMS];$/;"	m	struct:mehcached_server_conf	typeref:struct:mehcached_server_conf::mehcached_server_hot_item_conf
+in_use	src/shm.c	/^	size_t in_use;$/;"	m	struct:mehcached_shm_page	file:
+increment_ratio	src/netbench_config.h	/^	double increment_ratio;$/;"	m	struct:mehcached_workload_thread_conf
+info_arch	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_arch	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_cray	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
+info_cray	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
+info_language_dialect_default	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_dialect_default =$/;"	v
+info_language_dialect_default	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_dialect_default = "INFO" ":" "dialect_default["$/;"	v
+info_platform	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_simulate	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
+info_simulate	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
+info_simulate_version	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v
+info_simulate_version	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v
+info_version	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v
+info_version	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v
+info_version_internal	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v
+info_version_internal	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v
+init_addr	build/gen_confs.py	/^def init_addr():$/;"	f
+ip_addr	src/netbench_config.h	/^	uint8_t ip_addr[4];$/;"	m	struct:mehcached_port_conf
+isolated_server_numa_nodes	build/run_analysis_for_conf.py	/^isolated_server_numa_nodes = False$/;"	v
+item_size	src/alloc.h	/^    uint64_t item_size;		\/\/ XXX: isn't this breaking 8-byte alignment?$/;"	m	struct:mehcached_alloc_item
+item_vec	src/table.h	/^    uint64_t item_vec[MEHCACHED_ITEMS_PER_BUCKET];$/;"	m	struct:mehcached_bucket
+junk	src/microbench.c	/^    uint64_t junk;$/;"	m	struct:proc_arg	file:
+k0	src/city.c	/^static const uint64 k0 = 0xc3a5c85c97cb3127ULL;$/;"	v	file:
+k1	src/city.c	/^static const uint64 k1 = 0xb492b66fbe98f273ULL;$/;"	v	file:
+k2	src/city.c	/^static const uint64 k2 = 0x9ae16a3b2f90404fULL;$/;"	v	file:
+k3	src/city.c	/^static const uint64 k3 = 0xc949d7c7509e6557ULL;$/;"	v	file:
+key_hash	src/netbench_config.h	/^	uint64_t key_hash;$/;"	m	struct:mehcached_server_hot_item_conf
+key_hash	src/table.h	/^    uint64_t key_hash;$/;"	m	struct:mehcached_item
+key_hash	src/table.h	/^    uint64_t key_hash;$/;"	m	struct:mehcached_prefetch_state
+key_hash	src/table.h	/^    uint64_t key_hash;$/;"	m	struct:mehcached_request
+key_length	src/microbench.c	/^    size_t key_length;$/;"	m	struct:proc_arg	file:
+key_length	src/netbench_config.h	/^	size_t key_length;$/;"	m	struct:mehcached_prepopulation_conf
+key_length	src/netbench_config.h	/^	size_t key_length;$/;"	m	struct:mehcached_workload_thread_conf
+kv_length_vec	src/table.h	/^    uint32_t kv_length_vec; \/\/ key_length: 8, value_length: 24; kv_length_vec == 0: empty item$/;"	m	struct:mehcached_item
+kv_length_vec	src/table.h	/^    uint32_t kv_length_vec;$/;"	m	struct:mehcached_request
+last_bytes_rx	src/netbench_client.c	/^    uint64_t last_bytes_rx;$/;"	m	struct:client_state	file:
+last_bytes_rx	src/netbench_server.c	/^    uint64_t last_bytes_rx;$/;"	m	struct:server_state	file:
+last_bytes_tx	src/netbench_client.c	/^    uint64_t last_bytes_tx;$/;"	m	struct:client_state	file:
+last_bytes_tx	src/netbench_server.c	/^    uint64_t last_bytes_tx;$/;"	m	struct:server_state	file:
+last_n	src/zipf.h	/^	uint64_t last_n;	\/\/ last n used to calculate the following$/;"	m	struct:zipf_gen_state
+last_num_key0_operations_done	src/netbench_client.c	/^    uint64_t last_num_key0_operations_done;$/;"	m	struct:client_state	file:
+last_num_key0_operations_done	src/netbench_server.c	/^    uint64_t last_num_key0_operations_done;$/;"	m	struct:server_state	file:
+last_num_operations_done	src/netbench_client.c	/^    uint64_t last_num_operations_done;$/;"	m	struct:client_state	file:
+last_num_operations_done	src/netbench_server.c	/^    uint64_t last_num_operations_done;$/;"	m	struct:server_state	file:
+last_num_operations_succeeded	src/netbench_client.c	/^    uint64_t last_num_operations_succeeded;$/;"	m	struct:client_state	file:
+last_num_operations_succeeded	src/netbench_server.c	/^    uint64_t last_num_operations_succeeded;$/;"	m	struct:server_state	file:
+last_num_per_partition_ops	src/netbench_server.c	/^    uint64_t last_num_per_partition_ops[MEHCACHED_MAX_PARTITIONS];$/;"	m	struct:server_state	file:
+last_num_rx_burst	src/netbench_server.c	/^    uint64_t last_num_rx_burst;$/;"	m	struct:server_state	file:
+last_num_rx_received	src/netbench_server.c	/^    uint64_t last_num_rx_received;$/;"	m	struct:server_state	file:
+last_num_tx_dropped	src/netbench_client.c	/^    uint64_t last_num_tx_dropped;$/;"	m	struct:client_state	file:
+last_num_tx_dropped	src/netbench_server.c	/^    uint64_t last_num_tx_dropped;$/;"	m	struct:server_state	file:
+last_num_tx_sent	src/netbench_client.c	/^    uint64_t last_num_tx_sent;$/;"	m	struct:client_state	file:
+last_num_tx_sent	src/netbench_server.c	/^    uint64_t last_num_tx_sent;$/;"	m	struct:server_state	file:
+latency_bin0	src/netbench_client.c	/^    uint32_t latency_bin0[128];$/;"	m	struct:client_state	file:
+latency_bin1	src/netbench_client.c	/^    uint32_t latency_bin1[128];$/;"	m	struct:client_state	file:
+latency_bin2	src/netbench_client.c	/^    uint32_t latency_bin2[128];$/;"	m	struct:client_state	file:
+latency_bin3	src/netbench_client.c	/^    uint32_t latency_bin3[128];$/;"	m	struct:client_state	file:
+latency_bin4	src/netbench_client.c	/^    uint32_t latency_bin4;$/;"	m	struct:client_state	file:
+length	src/shm.c	/^	size_t length;$/;"	m	struct:mehcached_shm_entry	file:
+length	src/shm.c	/^	size_t length;$/;"	m	struct:mehcached_shm_mapping	file:
+load_igb_uio_module	scripts/setup_dkdp_env.sh	/^load_igb_uio_module()$/;"	f
+lock	src/alloc_dynamic.h	/^    uint32_t lock;$/;"	m	struct:mehcached_dynamic
+lock	src/alloc_pool.h	/^    uint32_t lock;$/;"	m	struct:mehcached_pool
+lock	src/table.h	/^        uint32_t lock;$/;"	m	struct:mehcached_table::__anon1
+ls_mnt_huge	scripts/setup_dkdp_env.sh	/^ls_mnt_huge()$/;"	f
+mac_addr	src/netbench_config.h	/^	uint8_t mac_addr[6];$/;"	m	struct:mehcached_port_conf
+main	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	build/CMakeFiles/feature_tests.c	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f
+main	build/CMakeFiles/feature_tests.cxx	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f
+main	build/gen_confs.py	/^def main():$/;"	f
+main	src/load.c	/^main(int argc MEHCACHED_UNUSED, const char *argv[] MEHCACHED_UNUSED)$/;"	f
+main	src/microbench.c	/^main(int argc, const char *argv[])$/;"	f
+main	src/netbench_analysis.c	/^main(int argc, const char *argv[])$/;"	f
+main	src/netbench_client.c	/^main(int argc, const char *argv[])$/;"	f
+main	src/netbench_server.c	/^main(int argc, const char *argv[])$/;"	f
+main	src/test.c	/^main(int argc MEHCACHED_UNUSED, const char *argv[] MEHCACHED_UNUSED)$/;"	f
+mask	src/alloc_pool.h	/^    uint64_t mask;  \/\/ size - 1; this mask is used only when converting the offset to the actual location of the item$/;"	m	struct:mehcached_pool
+masstree	src/netbench_server.c	/^    masstree_t masstree;$/;"	m	struct:server_state	file:
+mbuf	src/netbench_client.c	/^	struct rte_mbuf *mbuf;$/;"	m	struct:packet_construction_state	typeref:struct:packet_construction_state::rte_mbuf	file:
+mehcached_alloc_extra_bucket	src/table.c	/^mehcached_alloc_extra_bucket(struct mehcached_table *table, struct mehcached_bucket *bucket)$/;"	f	file:
+mehcached_alloc_item	src/alloc.h	/^struct mehcached_alloc_item$/;"	s
+mehcached_append_request	src/netbench_client.c	/^mehcached_append_request(struct client_state *state MEHCACHED_UNUSED, struct packet_construction_state *constr_state, uint8_t operation, uint64_t key_hash, const uint8_t *key, size_t key_length, const uint8_t *value, size_t value_length, uint32_t expire_time)$/;"	f	file:
+mehcached_batch_packet	src/proto.h	/^struct mehcached_batch_packet$/;"	s
+mehcached_benchmark_analysis	src/netbench_analysis.c	/^mehcached_benchmark_analysis(uint64_t num_hot_items, double zipf_theta, double get_ratio, bool isolated_server_numa_nodes)$/;"	f	file:
+mehcached_benchmark_client	src/netbench_client.c	/^mehcached_benchmark_client(const char *machine_filename, const char *client_name, int cpu_mode, int port_mode, int num_workloads, const char *workload_filenames[])$/;"	f	file:
+mehcached_benchmark_client_proc	src/netbench_client.c	/^mehcached_benchmark_client_proc(void *arg)$/;"	f	file:
+mehcached_benchmark_consume_packets_proc	src/netbench_server.c	/^mehcached_benchmark_consume_packets_proc(void *arg)$/;"	f	file:
+mehcached_benchmark_prepopulate_proc	src/netbench_server.c	/^mehcached_benchmark_prepopulate_proc(void *arg)$/;"	f	file:
+mehcached_benchmark_server	src/netbench_server.c	/^mehcached_benchmark_server(const char *machine_filename, const char *server_name, int cpu_mode, int port_mode, const char *prepopulation_filename)$/;"	f	file:
+mehcached_benchmark_server_proc	src/netbench_server.c	/^mehcached_benchmark_server_proc(void *arg)$/;"	f	file:
+mehcached_bucket	src/table.h	/^struct mehcached_bucket$/;"	s
+mehcached_calc_bucket_index	src/table.c	/^mehcached_calc_bucket_index(const struct mehcached_table *table, uint64_t key_hash)$/;"	f	file:
+mehcached_calc_hot_item_hash	src/netbench_hot_item_hash.h	/^mehcached_calc_hot_item_hash(struct mehcached_server_conf *server_conf, struct mehcached_hot_item_hash *hot_item_hash)$/;"	f
+mehcached_calc_ip_checksum	src/netbench_client.c	/^mehcached_calc_ip_checksum(struct ipv4_hdr *ip)$/;"	f	file:
+mehcached_calc_tag	src/table.c	/^mehcached_calc_tag(uint64_t key_hash)$/;"	f	file:
+mehcached_calc_thread_load	src/netbench_analysis.c	/^mehcached_calc_thread_load(uint64_t out_thread_load[], const uint64_t partition_load[], const uint64_t hot_item_load[], const uint8_t partition_to_thread_org[], const uint8_t hot_item_to_thread_org[], const uint8_t partition_to_thread_new[], const uint8_t hot_item_to_thread_new[], uint8_t num_threads, uint64_t num_partitions, uint64_t num_hot_items, uint8_t num_numa_nodes, double get_ratio, bool isolated_server_numa_nodes)$/;"	f	file:
+mehcached_clean_files	src/shm.c	/^mehcached_clean_files()$/;"	f	file:
+mehcached_cleanup_all	src/table.c	/^mehcached_cleanup_all(uint8_t current_alloc_id, struct mehcached_table *table)$/;"	f	file:
+mehcached_cleanup_bucket	src/table.c	/^mehcached_cleanup_bucket(uint8_t current_alloc_id, struct mehcached_table *table, uint64_t old_tail, uint64_t new_tail)$/;"	f	file:
+mehcached_client_conf	src/netbench_config.h	/^struct mehcached_client_conf$/;"	s
+mehcached_client_send_packet	src/netbench_client.c	/^mehcached_client_send_packet(struct client_state *state, struct packet_construction_state *constr_state, uint8_t port_id)$/;"	f	file:
+mehcached_clone_packet	src/net_common.c	/^mehcached_clone_packet(struct rte_mbuf *mbuf_src)$/;"	f
+mehcached_compare_keys	src/table.c	/^mehcached_compare_keys(const uint8_t *key1, size_t key1_len, const uint8_t *key2, size_t key2_len)$/;"	f	file:
+mehcached_delete	src/table.c	/^mehcached_delete(uint8_t alloc_id MEHCACHED_UNUSED, struct mehcached_table *table, uint64_t key_hash, const uint8_t *key, size_t key_length)$/;"	f	file:
+mehcached_diagnosis	src/netbench_server.c	/^mehcached_diagnosis(struct mehcached_server_conf *server_conf)$/;"	f	file:
+mehcached_diagnosis_arg	src/netbench_server.c	/^struct mehcached_diagnosis_arg$/;"	s	file:
+mehcached_diagnosis_receive_packet_proc	src/netbench_server.c	/^mehcached_diagnosis_receive_packet_proc(void *arg)$/;"	f	file:
+mehcached_dynamic	src/alloc_dynamic.h	/^struct mehcached_dynamic$/;"	s
+mehcached_dynamic_allocate	src/alloc_dynamic.c	/^mehcached_dynamic_allocate(struct mehcached_dynamic *alloc, uint32_t item_size)$/;"	f	file:
+mehcached_dynamic_coalese_free_chunk_left	src/alloc_dynamic.c	/^mehcached_dynamic_coalese_free_chunk_left(struct mehcached_dynamic *alloc, uint8_t **chunk_start, uint64_t *chunk_size)$/;"	f	file:
+mehcached_dynamic_coalese_free_chunk_right	src/alloc_dynamic.c	/^mehcached_dynamic_coalese_free_chunk_right(struct mehcached_dynamic *alloc, uint8_t **chunk_start, uint64_t *chunk_size)$/;"	f	file:
+mehcached_dynamic_deallocate	src/alloc_dynamic.c	/^mehcached_dynamic_deallocate(struct mehcached_dynamic *alloc, uint64_t dynamic_offset)$/;"	f	file:
+mehcached_dynamic_free	src/alloc_dynamic.c	/^mehcached_dynamic_free(struct mehcached_dynamic *alloc)$/;"	f	file:
+mehcached_dynamic_init	src/alloc_dynamic.c	/^mehcached_dynamic_init(struct mehcached_dynamic *alloc, uint64_t size, bool concurrent_alloc_read, bool concurrent_alloc_write, size_t numa_node)$/;"	f	file:
+mehcached_dynamic_insert_free_chunk	src/alloc_dynamic.c	/^mehcached_dynamic_insert_free_chunk(struct mehcached_dynamic *alloc, uint8_t *chunk_start, uint64_t chunk_size)$/;"	f	file:
+mehcached_dynamic_item	src/alloc_dynamic.c	/^mehcached_dynamic_item(const struct mehcached_dynamic *alloc, uint64_t dynamic_offset)$/;"	f	file:
+mehcached_dynamic_lock	src/alloc_dynamic.c	/^mehcached_dynamic_lock(struct mehcached_dynamic *alloc MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_dynamic_remove_free_chunk_from_free_list	src/alloc_dynamic.c	/^void mehcached_dynamic_remove_free_chunk_from_free_list(struct mehcached_dynamic *alloc, uint8_t *chunk_start, uint64_t chunk_size)$/;"	f	file:
+mehcached_dynamic_remove_free_chunk_from_head	src/alloc_dynamic.c	/^mehcached_dynamic_remove_free_chunk_from_head(struct mehcached_dynamic *alloc, uint64_t minimum_chunk_size, uint8_t **out_chunk_start, uint64_t *out_chunk_size)$/;"	f	file:
+mehcached_dynamic_reset	src/alloc_dynamic.c	/^mehcached_dynamic_reset(struct mehcached_dynamic *alloc)$/;"	f	file:
+mehcached_dynamic_size_to_class_rounddown	src/alloc_dynamic.c	/^mehcached_dynamic_size_to_class_rounddown(uint64_t size)$/;"	f	file:
+mehcached_dynamic_size_to_class_roundup	src/alloc_dynamic.c	/^mehcached_dynamic_size_to_class_roundup(uint64_t size)$/;"	f	file:
+mehcached_dynamic_unlock	src/alloc_dynamic.c	/^mehcached_dynamic_unlock(struct mehcached_dynamic *alloc MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_eal_malloc_arg	src/util.h	/^struct mehcached_eal_malloc_arg$/;"	s
+mehcached_eal_malloc_lcore	src/util.h	/^mehcached_eal_malloc_lcore(size_t size, size_t lcore)$/;"	f
+mehcached_eal_malloc_lcore_internal	src/util.h	/^mehcached_eal_malloc_lcore_internal(void *arg)$/;"	f
+mehcached_extra_bucket	src/table.c	/^mehcached_extra_bucket(const struct mehcached_table *table, uint32_t extra_bucket_index)$/;"	f	file:
+mehcached_fill_hole	src/table.c	/^mehcached_fill_hole(struct mehcached_table *table, struct mehcached_bucket *bucket, size_t unused_item_index)$/;"	f	file:
+mehcached_find_empty	src/table.c	/^mehcached_find_empty(struct mehcached_table *table, struct mehcached_bucket *bucket, struct mehcached_bucket **located_bucket)$/;"	f	file:
+mehcached_find_empty_or_oldest	src/table.c	/^mehcached_find_empty_or_oldest(const struct mehcached_table *table, struct mehcached_bucket *bucket, struct mehcached_bucket **located_bucket)$/;"	f	file:
+mehcached_find_item_index	src/table.c	/^mehcached_find_item_index(const struct mehcached_table *table, struct mehcached_bucket *bucket, uint64_t key_hash, uint16_t tag, const uint8_t *key, size_t key_length, struct mehcached_bucket **located_bucket)$/;"	f	file:
+mehcached_find_same_tag	src/table.c	/^mehcached_find_same_tag(const struct mehcached_table *table, struct mehcached_bucket *bucket, uint16_t tag, struct mehcached_bucket **located_bucket)$/;"	f	file:
+mehcached_free_extra_bucket	src/table.c	/^mehcached_free_extra_bucket(struct mehcached_table *table, struct mehcached_bucket *bucket)$/;"	f	file:
+mehcached_free_network	src/net_common.c	/^mehcached_free_network(uint64_t port_mask)$/;"	f
+mehcached_get	src/table.c	/^mehcached_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table *table, uint64_t key_hash, const uint8_t *key, size_t key_length, uint8_t *out_value, size_t *in_out_value_length, uint32_t *out_expire_time, bool readonly MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_get_client_conf	src/netbench_config.c	/^mehcached_get_client_conf(const char *filename, const char *client_name)$/;"	f
+mehcached_get_hot_item_id	src/netbench_hot_item_hash.h	/^mehcached_get_hot_item_id(struct mehcached_server_conf *server_conf, struct mehcached_hot_item_hash *hot_item_hash, uint64_t key_hash)$/;"	f
+mehcached_get_memuse	src/util.h	/^mehcached_get_memuse()$/;"	f
+mehcached_get_partition_id	src/microbench.c	/^mehcached_get_partition_id(uint64_t key_hash, uint16_t num_partitions)$/;"	f	file:
+mehcached_get_partition_id	src/netbench_server.c	/^mehcached_get_partition_id(struct server_state *state, uint64_t key_hash)$/;"	f	file:
+mehcached_get_prepopulation_conf	src/netbench_config.c	/^mehcached_get_prepopulation_conf(const char *filename, const char *server_name)$/;"	f
+mehcached_get_server_conf	src/netbench_config.c	/^mehcached_get_server_conf(const char *filename, const char *server_name)$/;"	f
+mehcached_get_stats	src/net_common.c	/^mehcached_get_stats(uint8_t port_id, uint64_t *out_num_rx_burst, uint64_t *out_num_rx_received, uint64_t *out_num_tx_burst, uint64_t *out_num_tx_sent, uint64_t *out_num_tx_dropped)$/;"	f
+mehcached_get_stats_lcore	src/net_common.c	/^mehcached_get_stats_lcore(uint8_t port_id, uint32_t lcore, uint64_t *out_num_rx_burst, uint64_t *out_num_rx_received, uint64_t *out_num_tx_burst, uint64_t *out_num_tx_sent, uint64_t *out_num_tx_dropped)$/;"	f
+mehcached_get_workload_conf	src/netbench_config.c	/^mehcached_get_workload_conf(const char *filename, const char *client_name)$/;"	f
+mehcached_has_extra_bucket	src/table.c	/^mehcached_has_extra_bucket(struct mehcached_bucket *bucket MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_hash_key	src/netbench_analysis.c	/^mehcached_hash_key(uint64_t int_key)$/;"	f	file:
+mehcached_hash_key	src/netbench_client.c	/^mehcached_hash_key(uint64_t int_key)$/;"	f	file:
+mehcached_hash_key	src/netbench_server.c	/^mehcached_hash_key(uint64_t int_key)$/;"	f	file:
+mehcached_hot_item_hash	src/netbench_hot_item_hash.h	/^struct mehcached_hot_item_hash$/;"	s
+mehcached_increment	src/table.c	/^mehcached_increment(uint8_t current_alloc_id, struct mehcached_table *table, uint64_t key_hash, const uint8_t *key, size_t key_length, uint64_t increment, uint64_t *out_new_value, uint32_t expire_time)$/;"	f	file:
+mehcached_init_header_template	src/netbench_client.c	/^mehcached_init_header_template(struct client_state *state)$/;"	f	file:
+mehcached_init_network	src/net_common.c	/^mehcached_init_network(uint64_t cpu_mask, uint64_t port_mask, uint8_t *out_num_ports)$/;"	f
+mehcached_init_packet	src/netbench_client.c	/^mehcached_init_packet(struct client_state *state, struct packet_construction_state *constr_state, uint8_t batch_size, uint16_t mapping_id)$/;"	f	file:
+mehcached_item	src/table.h	/^struct mehcached_item$/;"	s
+mehcached_load_balance	src/netbench_analysis.c	/^mehcached_load_balance(const uint64_t partition_load[], const uint64_t hot_item_load[], const uint8_t partition_to_thread_org[], uint8_t out_partition_to_thread_new[], const uint8_t hot_item_to_thread_org[], uint8_t out_hot_item_to_thread_new[], uint8_t num_threads, uint64_t num_partitions, uint64_t num_hot_items, uint8_t num_numa_nodes, double get_ratio, bool isolated_server_numa_nodes)$/;"	f	file:
+mehcached_lock_bucket	src/table.c	/^mehcached_lock_bucket(const struct mehcached_table *table MEHCACHED_UNUSED, struct mehcached_bucket *bucket MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_lock_extra_bucket_free_list	src/table.c	/^mehcached_lock_extra_bucket_free_list(struct mehcached_table *table)$/;"	f	file:
+mehcached_malloc	src/alloc_malloc.h	/^struct mehcached_malloc$/;"	s
+mehcached_malloc_allocate	src/alloc_malloc.c	/^mehcached_malloc_allocate(struct mehcached_malloc *alloc, uint32_t item_size)$/;"	f	file:
+mehcached_malloc_deallocate	src/alloc_malloc.c	/^mehcached_malloc_deallocate(struct mehcached_malloc *alloc, uint64_t malloc_offset)$/;"	f	file:
+mehcached_malloc_free	src/alloc_malloc.c	/^mehcached_malloc_free(struct mehcached_malloc *alloc MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_malloc_init	src/alloc_malloc.c	/^mehcached_malloc_init(struct mehcached_malloc *alloc)$/;"	f	file:
+mehcached_malloc_item	src/alloc_malloc.c	/^mehcached_malloc_item(const struct mehcached_malloc *alloc, uint64_t malloc_offset)$/;"	f	file:
+mehcached_malloc_reset	src/alloc_malloc.c	/^mehcached_malloc_reset(struct mehcached_malloc *alloc MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_memcmp8	src/util.h	/^mehcached_memcmp8(const uint8_t *dest, const uint8_t *src, size_t length)$/;"	f
+mehcached_memcpy8	src/util.h	/^mehcached_memcpy8(uint8_t *dest, const uint8_t *src, size_t length)$/;"	f
+mehcached_need_to_init_packet	src/netbench_client.c	/^mehcached_need_to_init_packet(struct client_state *state MEHCACHED_UNUSED, struct packet_construction_state *constr_state)$/;"	f	file:
+mehcached_need_to_send_packet	src/netbench_client.c	/^mehcached_need_to_send_packet(struct client_state *state MEHCACHED_UNUSED, struct packet_construction_state *constr_state)$/;"	f	file:
+mehcached_next_power_of_two	src/util.h	/^mehcached_next_power_of_two(size_t v)$/;"	f
+mehcached_num_rx_desc	src/net_common.c	/^static uint16_t mehcached_num_rx_desc = RTE_TEST_RX_DESC_DEFAULT;$/;"	v	file:
+mehcached_num_tx_desc	src/net_common.c	/^static uint16_t mehcached_num_tx_desc = RTE_TEST_TX_DESC_DEFAULT;$/;"	v	file:
+mehcached_packet_alloc	src/net_common.c	/^mehcached_packet_alloc()$/;"	f
+mehcached_packet_free	src/net_common.c	/^mehcached_packet_free(struct rte_mbuf *mbuf)$/;"	f
+mehcached_pktmbuf_pool	src/net_common.c	/^static struct rte_mempool *mehcached_pktmbuf_pool[MEHCACHED_MAX_NUMA_NODES];$/;"	v	typeref:struct:rte_mempool	file:
+mehcached_pool	src/alloc_pool.h	/^struct mehcached_pool$/;"	s
+mehcached_pool_allocate	src/alloc_pool.c	/^mehcached_pool_allocate(struct mehcached_pool *alloc, uint32_t item_size)$/;"	f	file:
+mehcached_pool_check_invariants	src/alloc_pool.c	/^mehcached_pool_check_invariants(const struct mehcached_pool *alloc MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_pool_free	src/alloc_pool.c	/^mehcached_pool_free(struct mehcached_pool *alloc)$/;"	f	file:
+mehcached_pool_init	src/alloc_pool.c	/^mehcached_pool_init(struct mehcached_pool *alloc, uint64_t size, bool concurrent_alloc_read, bool concurrent_alloc_write, size_t numa_node)$/;"	f	file:
+mehcached_pool_is_valid	src/alloc_pool.c	/^mehcached_pool_is_valid(const struct mehcached_pool *alloc, uint64_t pool_offset)$/;"	f	file:
+mehcached_pool_item	src/alloc_pool.c	/^mehcached_pool_item(const struct mehcached_pool *alloc, uint64_t pool_offset)$/;"	f	file:
+mehcached_pool_lock	src/alloc_pool.c	/^mehcached_pool_lock(struct mehcached_pool *alloc MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_pool_pop_head	src/alloc_pool.c	/^mehcached_pool_pop_head(struct mehcached_pool *alloc)$/;"	f	file:
+mehcached_pool_push_tail	src/alloc_pool.c	/^mehcached_pool_push_tail(struct mehcached_pool *alloc, uint32_t item_size)$/;"	f	file:
+mehcached_pool_reset	src/alloc_pool.c	/^mehcached_pool_reset(struct mehcached_pool *alloc)$/;"	f	file:
+mehcached_pool_unlock	src/alloc_pool.c	/^mehcached_pool_unlock(struct mehcached_pool *alloc MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_port_conf	src/net_common.c	/^static const struct rte_eth_conf mehcached_port_conf = {$/;"	v	typeref:struct:rte_eth_conf	file:
+mehcached_port_conf	src/netbench_config.h	/^struct mehcached_port_conf$/;"	s
+mehcached_pow_approx	src/zipf.h	/^mehcached_pow_approx(double a, double b)$/;"	f
+mehcached_prefetch_alloc	src/table.c	/^mehcached_prefetch_alloc(struct mehcached_prefetch_state *in_out_prefetch_state)$/;"	f	file:
+mehcached_prefetch_state	src/table.h	/^struct mehcached_prefetch_state$/;"	s
+mehcached_prefetch_table	src/table.c	/^mehcached_prefetch_table(struct mehcached_table *table, uint64_t key_hash, struct mehcached_prefetch_state *out_prefetch_state)$/;"	f	file:
+mehcached_prepopulation_conf	src/netbench_config.h	/^struct mehcached_prepopulation_conf$/;"	s
+mehcached_print_array_normalized	src/netbench_analysis.c	/^mehcached_print_array_normalized(uint64_t arr[], size_t num_elements)$/;"	f	file:
+mehcached_print_array_uint64_t	src/netbench_analysis.c	/^mehcached_print_array_uint64_t(uint64_t arr[], size_t num_elements)$/;"	f	file:
+mehcached_print_bucket	src/table.c	/^mehcached_print_bucket(const struct mehcached_bucket *bucket)$/;"	f	file:
+mehcached_print_buckets	src/table.c	/^mehcached_print_buckets(const struct mehcached_table *table)$/;"	f	file:
+mehcached_print_stats	src/table.c	/^mehcached_print_stats(const struct mehcached_table *table MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_queue_state	src/net_common.c	/^struct mehcached_queue_state {$/;"	s	file:
+mehcached_queue_states	src/net_common.c	/^static struct mehcached_queue_state *mehcached_queue_states[MEHCACHED_MAX_QUEUES * MEHCACHED_MAX_PORTS];$/;"	v	typeref:struct:mehcached_queue_state	file:
+mehcached_rand	src/util.h	/^mehcached_rand(uint64_t *state)$/;"	f
+mehcached_rand_d	src/util.h	/^mehcached_rand_d(uint64_t *state)$/;"	f
+mehcached_read_version_begin	src/table.c	/^mehcached_read_version_begin(const struct mehcached_table *table MEHCACHED_UNUSED, const struct mehcached_bucket *bucket MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_read_version_end	src/table.c	/^mehcached_read_version_end(const struct mehcached_table *table MEHCACHED_UNUSED, const struct mehcached_bucket *bucket MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_receive_packet	src/net_common.c	/^mehcached_receive_packet(uint8_t port_id)$/;"	f
+mehcached_receive_packets	src/net_common.c	/^mehcached_receive_packets(uint8_t port_id, struct rte_mbuf **mbufs, size_t *in_out_num_mbufs)$/;"	f
+mehcached_remote_check_response	src/netbench_client.c	/^mehcached_remote_check_response(struct client_state *state)$/;"	f	file:
+mehcached_remote_delete	src/netbench_client.c	/^mehcached_remote_delete(struct client_state *state, uint64_t key_hash, const uint8_t *key, size_t key_length)$/;"	f	file:
+mehcached_remote_get	src/netbench_client.c	/^mehcached_remote_get(struct client_state *state, uint64_t key_hash, const uint8_t *key, size_t key_length)$/;"	f	file:
+mehcached_remote_increment	src/netbench_client.c	/^mehcached_remote_increment(struct client_state *state, uint64_t key_hash, const uint8_t *key, size_t key_length, uint64_t increment, uint32_t expire_time)$/;"	f	file:
+mehcached_remote_noop_read	src/netbench_client.c	/^mehcached_remote_noop_read(struct client_state *state, uint64_t key_hash, const uint8_t *key, size_t key_length)$/;"	f	file:
+mehcached_remote_noop_write	src/netbench_client.c	/^mehcached_remote_noop_write(struct client_state *state, uint64_t key_hash, const uint8_t *key, size_t key_length, const uint8_t *value, size_t value_length, uint32_t expire_time)$/;"	f	file:
+mehcached_remote_schedule_request	src/netbench_client.c	/^mehcached_remote_schedule_request(struct client_state *state, uint8_t operation, uint64_t key_hash, const uint8_t *key, size_t key_length, const uint8_t *value, size_t value_length, uint32_t expire_time)$/;"	f	file:
+mehcached_remote_send_response	src/netbench_server.c	/^mehcached_remote_send_response(struct server_state *state, struct rte_mbuf *mbuf, uint8_t port_id)$/;"	f	file:
+mehcached_remote_set	src/netbench_client.c	/^mehcached_remote_set(struct client_state *state, uint64_t key_hash, const uint8_t *key, size_t key_length, const uint8_t *value, size_t value_length, uint32_t expire_time, bool overwrite)$/;"	f	file:
+mehcached_remote_test	src/netbench_client.c	/^mehcached_remote_test(struct client_state *state, uint64_t key_hash, const uint8_t *key, size_t key_length)$/;"	f	file:
+mehcached_request	src/table.h	/^struct mehcached_request$/;"	s
+mehcached_reset_table_stats	src/table.c	/^mehcached_reset_table_stats(struct mehcached_table *table MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_rx_conf	src/net_common.c	/^static const struct rte_eth_rxconf mehcached_rx_conf = {$/;"	v	typeref:struct:rte_eth_rxconf	file:
+mehcached_send_packet	src/net_common.c	/^mehcached_send_packet(uint8_t port_id, struct rte_mbuf *mbuf)$/;"	f
+mehcached_send_packet_flush	src/net_common.c	/^mehcached_send_packet_flush(uint8_t port_id)$/;"	f
+mehcached_server_conf	src/netbench_config.h	/^struct mehcached_server_conf$/;"	s
+mehcached_server_hot_item_conf	src/netbench_config.h	/^struct mehcached_server_hot_item_conf$/;"	s
+mehcached_server_partition_conf	src/netbench_config.h	/^struct mehcached_server_partition_conf$/;"	s
+mehcached_server_thread_conf	src/netbench_config.h	/^struct mehcached_server_thread_conf$/;"	s
+mehcached_set	src/table.c	/^mehcached_set(uint8_t current_alloc_id, struct mehcached_table *table, uint64_t key_hash, const uint8_t *key, size_t key_length, const uint8_t *value, size_t value_length, uint32_t expire_time, bool overwrite)$/;"	f	file:
+mehcached_set_dst_port_mapping	src/net_common.c	/^mehcached_set_dst_port_mapping(uint8_t port_id, uint16_t l4_dst_port, uint32_t lcore)$/;"	f
+mehcached_set_dst_port_mask	src/net_common.c	/^mehcached_set_dst_port_mask(uint8_t port_id, uint16_t l4_dst_port_mask)$/;"	f
+mehcached_set_item	src/table.c	/^mehcached_set_item(struct mehcached_item *item, uint64_t key_hash, const uint8_t *key, uint32_t key_length, const uint8_t *value, uint32_t value_length, uint32_t expire_time)$/;"	f	file:
+mehcached_set_item_value	src/table.c	/^mehcached_set_item_value(struct mehcached_item *item, const uint8_t *value, uint32_t value_length, uint32_t expire_time)$/;"	f	file:
+mehcached_shm_adjust_size	src/shm.c	/^mehcached_shm_adjust_size(size_t size)$/;"	f
+mehcached_shm_alloc	src/shm.c	/^mehcached_shm_alloc(size_t length, size_t numa_node)$/;"	f
+mehcached_shm_check_remove	src/shm.c	/^mehcached_shm_check_remove(size_t entry_id)$/;"	f	file:
+mehcached_shm_compare_paddr	src/shm.c	/^mehcached_shm_compare_paddr(const void *a, const void *b)$/;"	f	file:
+mehcached_shm_compare_vaddr	src/shm.c	/^mehcached_shm_compare_vaddr(const void *a, const void *b)$/;"	f	file:
+mehcached_shm_dump_page_info	src/shm.c	/^mehcached_shm_dump_page_info()$/;"	f
+mehcached_shm_entries	src/shm.c	/^static struct mehcached_shm_entry mehcached_shm_entries[MEHCACHED_SHM_MAX_ENTRIES];$/;"	v	typeref:struct:mehcached_shm_entry	file:
+mehcached_shm_entry	src/shm.c	/^struct mehcached_shm_entry$/;"	s	file:
+mehcached_shm_find_free_address	src/shm.c	/^mehcached_shm_find_free_address(size_t size)$/;"	f
+mehcached_shm_free_contiguous	src/shm.c	/^mehcached_shm_free_contiguous(void *ptr)$/;"	f
+mehcached_shm_free_striped	src/shm.c	/^mehcached_shm_free_striped(void *ptr)$/;"	f
+mehcached_shm_get_memuse	src/shm.c	/^mehcached_shm_get_memuse()$/;"	f
+mehcached_shm_get_page_size	src/shm.c	/^mehcached_shm_get_page_size()$/;"	f
+mehcached_shm_init	src/shm.c	/^mehcached_shm_init(size_t page_size, size_t num_numa_nodes, size_t num_pages_to_try, size_t num_pages_to_reserve)$/;"	f
+mehcached_shm_lock	src/shm.c	/^mehcached_shm_lock()$/;"	f	file:
+mehcached_shm_malloc_contiguous	src/shm.c	/^mehcached_shm_malloc_contiguous(size_t size, size_t lcore)$/;"	f
+mehcached_shm_malloc_contiguous_any	src/shm.c	/^mehcached_shm_malloc_contiguous_any(size_t size)$/;"	f
+mehcached_shm_malloc_contiguous_local	src/shm.c	/^mehcached_shm_malloc_contiguous_local(size_t size)$/;"	f
+mehcached_shm_malloc_striped	src/shm.c	/^mehcached_shm_malloc_striped(size_t size)$/;"	f
+mehcached_shm_map	src/shm.c	/^mehcached_shm_map(size_t entry_id, void *ptr, size_t offset, size_t length)$/;"	f
+mehcached_shm_mapping	src/shm.c	/^struct mehcached_shm_mapping$/;"	s	file:
+mehcached_shm_mappings	src/shm.c	/^static struct mehcached_shm_mapping mehcached_shm_mappings[MEHCACHED_SHM_MAX_MAPPINGS];$/;"	v	typeref:struct:mehcached_shm_mapping	file:
+mehcached_shm_page	src/shm.c	/^struct mehcached_shm_page$/;"	s	file:
+mehcached_shm_page_size	src/shm.c	/^static size_t mehcached_shm_page_size;$/;"	v	file:
+mehcached_shm_pages	src/shm.c	/^static struct mehcached_shm_page mehcached_shm_pages[MEHCACHED_SHM_MAX_PAGES];$/;"	v	typeref:struct:mehcached_shm_page	file:
+mehcached_shm_path	src/shm.c	/^mehcached_shm_path(size_t page_id, char out_path[PATH_MAX])$/;"	f	file:
+mehcached_shm_path_prefix	src/shm.c	/^static const char *mehcached_shm_path_prefix = "\/dev\/hugepages\/mehcached_shm_";$/;"	v	file:
+mehcached_shm_schedule_remove	src/shm.c	/^mehcached_shm_schedule_remove(size_t entry_id)$/;"	f
+mehcached_shm_state_lock	src/shm.c	/^static uint64_t mehcached_shm_state_lock;$/;"	v	file:
+mehcached_shm_unlock	src/shm.c	/^mehcached_shm_unlock()$/;"	f	file:
+mehcached_shm_unmap	src/shm.c	/^mehcached_shm_unmap(void *ptr)$/;"	f
+mehcached_shm_used_memory	src/shm.c	/^static size_t mehcached_shm_used_memory;$/;"	v	file:
+mehcached_stopwatch_1_msec	src/stopwatch.c	/^uint64_t mehcached_stopwatch_1_msec = 0UL;$/;"	v
+mehcached_stopwatch_1_sec	src/stopwatch.c	/^uint64_t mehcached_stopwatch_1_sec = 0UL;$/;"	v
+mehcached_stopwatch_1_usec	src/stopwatch.c	/^uint64_t mehcached_stopwatch_1_usec = 0UL;$/;"	v
+mehcached_stopwatch_diff_in_s	src/stopwatch.h	/^mehcached_stopwatch_diff_in_s(uint64_t new_t, uint64_t old_t)$/;"	f
+mehcached_stopwatch_diff_in_us	src/stopwatch.h	/^mehcached_stopwatch_diff_in_us(uint64_t new_t, uint64_t old_t)$/;"	f
+mehcached_stopwatch_init_end	src/stopwatch.c	/^mehcached_stopwatch_init_end()$/;"	f
+mehcached_stopwatch_init_s	src/stopwatch.c	/^static uint64_t mehcached_stopwatch_init_s;$/;"	v	file:
+mehcached_stopwatch_init_start	src/stopwatch.c	/^mehcached_stopwatch_init_start()$/;"	f
+mehcached_stopwatch_init_tv	src/stopwatch.c	/^static struct timeval mehcached_stopwatch_init_tv;$/;"	v	typeref:struct:timeval	file:
+mehcached_stopwatch_now	src/stopwatch.h	/^mehcached_stopwatch_now()$/;"	f
+mehcached_table	src/table.h	/^struct mehcached_table$/;"	s
+mehcached_table_free	src/table.c	/^mehcached_table_free(struct mehcached_table *table)$/;"	f	file:
+mehcached_table_init	src/table.c	/^mehcached_table_init(struct mehcached_table *table, size_t num_buckets, size_t num_pools MEHCACHED_UNUSED, size_t pool_size MEHCACHED_UNUSED, bool concurrent_table_read, bool concurrent_table_write, bool concurrent_alloc_write, size_t table_numa_node, size_t alloc_numa_nodes[], double mth_threshold)$/;"	f	file:
+mehcached_table_reset	src/table.c	/^mehcached_table_reset(struct mehcached_table *table)$/;"	f	file:
+mehcached_test	src/table.c	/^mehcached_test(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table *table, uint64_t key_hash, const uint8_t *key, size_t key_length)$/;"	f	file:
+mehcached_test_zipf	src/zipf.h	/^mehcached_test_zipf(double theta)$/;"	f
+mehcached_tx_conf	src/net_common.c	/^static const struct rte_eth_txconf mehcached_tx_conf = {$/;"	v	typeref:struct:rte_eth_txconf	file:
+mehcached_unlock_bucket	src/table.c	/^mehcached_unlock_bucket(const struct mehcached_table *table MEHCACHED_UNUSED, struct mehcached_bucket *bucket MEHCACHED_UNUSED)$/;"	f	file:
+mehcached_unlock_extra_bucket_free_list	src/table.c	/^mehcached_unlock_extra_bucket_free_list(struct mehcached_table *table)$/;"	f	file:
+mehcached_update_ip_checksum	src/netbench_client.c	/^mehcached_update_ip_checksum(struct ipv4_hdr *ip, uint16_t old_v, uint16_t new_v)$/;"	f	file:
+mehcached_workload_conf	src/netbench_config.h	/^struct mehcached_workload_conf$/;"	s
+mehcached_workload_thread_conf	src/netbench_config.h	/^struct mehcached_workload_thread_conf$/;"	s
+mehcached_zeta	src/zipf.h	/^mehcached_zeta(uint64_t last_n, double last_sum, uint64_t n, double theta)$/;"	f
+mehcached_zipf_change_n	src/zipf.h	/^mehcached_zipf_change_n(struct zipf_gen_state *state, uint64_t n)$/;"	f
+mehcached_zipf_init	src/zipf.h	/^mehcached_zipf_init(struct zipf_gen_state *state, uint64_t n, double theta, uint64_t rand_seed)$/;"	f
+mehcached_zipf_init_copy	src/zipf.h	/^mehcached_zipf_init_copy(struct zipf_gen_state *state, const struct zipf_gen_state *src_state, uint64_t rand_seed)$/;"	f
+mehcached_zipf_next	src/zipf.h	/^mehcached_zipf_next(struct zipf_gen_state *state)$/;"	f
+memory_barrier	src/util.h	/^memory_barrier()$/;"	f
+move_to_head_failed	src/table.h	/^        size_t move_to_head_failed;$/;"	m	struct:mehcached_table::__anon2
+move_to_head_performed	src/table.h	/^        size_t move_to_head_performed;$/;"	m	struct:mehcached_table::__anon2
+move_to_head_skipped	src/table.h	/^        size_t move_to_head_skipped;$/;"	m	struct:mehcached_table::__anon2
+mth_threshold	src/netbench_config.h	/^	double mth_threshold;$/;"	m	struct:mehcached_server_partition_conf
+mth_threshold	src/table.h	/^    uint64_t mth_threshold;$/;"	m	struct:mehcached_table
+mul_hash	src/hash.h	/^static uint64_t mul_hash(const uint8_t *key, size_t len)$/;"	f
+n	src/zipf.h	/^	uint64_t n;			\/\/ number of items (input)$/;"	m	struct:zipf_gen_state
+name	build/gen_confs.py	/^    name = 'CRCW'$/;"	v	class:CRCW
+name	build/gen_confs.py	/^    name = 'CRCWS'$/;"	v	class:CRCWS
+name	build/gen_confs.py	/^    name = 'CREW'$/;"	v	class:CREW
+name	build/gen_confs.py	/^    name = 'CREW0'$/;"	v	class:CREW0
+name	build/gen_confs.py	/^    name = 'EREW'$/;"	v	class:EREW
+next_addr	build/gen_confs.py	/^def next_addr():$/;"	f
+next_extra_bucket_index	src/table.h	/^    uint32_t next_extra_bucket_index;   \/\/ 1-base; 0 = no extra bucket$/;"	m	struct:mehcached_bucket
+next_index	src/netbench_client.c	/^	uint8_t next_index;$/;"	m	struct:packet_construction_state	file:
+next_key	src/netbench_client.c	/^	uint8_t *next_key;$/;"	m	struct:packet_construction_state	file:
+next_port_index_rx	src/netbench_client.c	/^	uint8_t next_port_index_rx;	\/\/ need modulo to get actual port index$/;"	m	struct:client_state	file:
+next_port_index_tx	src/netbench_client.c	/^	uint8_t next_port_index_tx;	\/\/ need modulo to get actual port index$/;"	m	struct:client_state	file:
+next_thread_id_for_spread_requests	src/netbench_client.c	/^	uint8_t next_thread_id_for_spread_requests;	\/\/ need modulo to get actual thread_id$/;"	m	struct:client_state	file:
+noop_hash	src/hash.h	/^static uint64_t noop_hash(const uint8_t *key, size_t len)$/;"	f
+num_buckets	src/table.h	/^    uint32_t num_buckets;$/;"	m	struct:mehcached_table
+num_buckets_mask	src/table.h	/^    uint32_t num_buckets_mask;$/;"	m	struct:mehcached_table
+num_events	src/perf_count/perf_count.c	/^	size_t num_events;$/;"	m	struct:perf_count_ctx	file:
+num_extra_buckets	src/table.h	/^    uint32_t num_extra_buckets;$/;"	m	struct:mehcached_table
+num_groups	src/perf_count/perf_count.c	/^	size_t num_groups;$/;"	m	struct:perf_count_ctx	file:
+num_hot_items	src/netbench_config.h	/^	uint8_t num_hot_items;$/;"	m	struct:mehcached_server_conf
+num_items	src/netbench_config.h	/^	uint64_t num_items;$/;"	m	struct:mehcached_prepopulation_conf
+num_items	src/netbench_config.h	/^	uint64_t num_items;$/;"	m	struct:mehcached_server_partition_conf
+num_items	src/netbench_config.h	/^	uint64_t num_items;$/;"	m	struct:mehcached_workload_thread_conf
+num_key0_operations_done	src/netbench_client.c	/^    uint64_t num_key0_operations_done;$/;"	m	struct:client_state	file:
+num_key0_operations_done	src/netbench_server.c	/^    uint64_t num_key0_operations_done;$/;"	m	struct:server_state	file:
+num_operations	src/netbench_config.h	/^	uint64_t num_operations;$/;"	m	struct:mehcached_workload_thread_conf
+num_operations_done	src/netbench_client.c	/^    uint64_t num_operations_done;$/;"	m	struct:client_state	file:
+num_operations_done	src/netbench_server.c	/^    uint64_t num_operations_done;$/;"	m	struct:server_state	file:
+num_operations_succeeded	src/netbench_client.c	/^    uint64_t num_operations_succeeded;$/;"	m	struct:client_state	file:
+num_operations_succeeded	src/netbench_server.c	/^    uint64_t num_operations_succeeded;$/;"	m	struct:server_state	file:
+num_packets_initialized	src/netbench_client.c	/^	uint64_t num_packets_initialized;$/;"	m	struct:client_state	file:
+num_pages	src/shm.c	/^	size_t num_pages;$/;"	m	struct:mehcached_shm_entry	file:
+num_pages	src/shm.c	/^	size_t num_pages;$/;"	m	struct:mehcached_shm_mapping	file:
+num_partitions	src/microbench.c	/^    size_t num_partitions;$/;"	m	struct:proc_arg	file:
+num_partitions	src/netbench_config.h	/^	uint16_t num_partitions;$/;"	m	struct:mehcached_server_conf
+num_per_partition_ops	src/netbench_server.c	/^    uint64_t num_per_partition_ops[MEHCACHED_MAX_PARTITIONS];$/;"	m	struct:server_state	file:
+num_ports	src/netbench_config.h	/^	uint8_t num_ports;$/;"	m	struct:mehcached_client_conf
+num_ports	src/netbench_config.h	/^	uint8_t num_ports;$/;"	m	struct:mehcached_server_conf
+num_ports	src/netbench_config.h	/^	uint8_t num_ports;$/;"	m	struct:mehcached_server_thread_conf
+num_ports	src/netbench_config.h	/^	uint8_t num_ports;$/;"	m	struct:mehcached_workload_thread_conf
+num_requests	src/proto.h	/^	uint8_t num_requests;$/;"	m	struct:mehcached_batch_packet
+num_rx_burst	src/net_common.c	/^	uint64_t num_rx_burst;$/;"	m	struct:mehcached_queue_state	file:
+num_rx_burst	src/netbench_server.c	/^    uint64_t num_rx_burst;$/;"	m	struct:server_state	file:
+num_rx_received	src/net_common.c	/^	uint64_t num_rx_received;$/;"	m	struct:mehcached_queue_state	file:
+num_rx_received	src/netbench_server.c	/^    uint64_t num_rx_received;$/;"	m	struct:server_state	file:
+num_soft_fdir_dropped	src/netbench_server.c	/^    uint64_t num_soft_fdir_dropped[MEHCACHED_MAX_PORTS];$/;"	m	struct:server_state	file:
+num_threads	src/microbench.c	/^    size_t num_threads;$/;"	m	struct:proc_arg	file:
+num_threads	src/netbench_config.h	/^	uint8_t num_threads;$/;"	m	struct:mehcached_client_conf
+num_threads	src/netbench_config.h	/^	uint8_t num_threads;$/;"	m	struct:mehcached_server_conf
+num_threads	src/netbench_config.h	/^	uint8_t num_threads;$/;"	m	struct:mehcached_workload_conf
+num_tx_burst	src/net_common.c	/^	uint64_t num_tx_burst;$/;"	m	struct:mehcached_queue_state	file:
+num_tx_dropped	src/net_common.c	/^	uint64_t num_tx_dropped;$/;"	m	struct:mehcached_queue_state	file:
+num_tx_dropped	src/netbench_client.c	/^    uint64_t num_tx_dropped;$/;"	m	struct:client_state	file:
+num_tx_dropped	src/netbench_server.c	/^    uint64_t num_tx_dropped;$/;"	m	struct:server_state	file:
+num_tx_sent	src/net_common.c	/^	uint64_t num_tx_sent;$/;"	m	struct:mehcached_queue_state	file:
+num_tx_sent	src/netbench_client.c	/^    uint64_t num_tx_sent;$/;"	m	struct:client_state	file:
+num_tx_sent	src/netbench_server.c	/^    uint64_t num_tx_sent;$/;"	m	struct:server_state	file:
+numa_node	src/shm.c	/^	size_t numa_node;$/;"	m	struct:mehcached_shm_page	file:
+op_count	src/microbench.c	/^    size_t op_count;$/;"	m	struct:proc_arg	file:
+op_key_hashes	src/microbench.c	/^    uint64_t *op_key_hashes;$/;"	m	struct:proc_arg	file:
+op_key_parts	src/microbench.c	/^    uint16_t *op_key_parts;$/;"	m	struct:proc_arg	file:
+op_keys	src/microbench.c	/^    uint8_t *op_keys;$/;"	m	struct:proc_arg	file:
+op_types	src/microbench.c	/^    uint8_t *op_types;$/;"	m	struct:proc_arg	file:
+op_values	src/microbench.c	/^    uint8_t *op_values;$/;"	m	struct:proc_arg	file:
+opaque	src/proto.h	/^	uint32_t opaque;$/;"	m	struct:mehcached_batch_packet
+operation	src/table.h	/^    uint8_t operation;  \/\/ of enum MEHCACHED_OPERATION type$/;"	m	struct:mehcached_request
+owner_thread_id	src/microbench.c	/^    size_t owner_thread_id[MEHCACHED_MAX_PARTITIONS];$/;"	m	struct:proc_arg	file:
+packet_construction_state	src/netbench_client.c	/^struct packet_construction_state$/;"	s	file:
+packet_size	src/netbench_server.c	/^    uint16_t packet_size;$/;"	m	struct:server_state	file:
+paddr	src/shm.c	/^	void *paddr;$/;"	m	struct:mehcached_shm_page	file:
+page_offset	src/shm.c	/^	size_t page_offset;$/;"	m	struct:mehcached_shm_mapping	file:
+pages	src/shm.c	/^	size_t *pages;$/;"	m	struct:mehcached_shm_entry	file:
+partition_id_to_thread_id	src/netbench_client.c	/^	uint8_t partition_id_to_thread_id[MEHCACHED_MAX_PARTITIONS];$/;"	m	struct:client_state	file:
+partition_mode	src/netbench_config.h	/^	int8_t partition_mode;$/;"	m	struct:mehcached_workload_thread_conf
+partitions	src/netbench_config.h	/^	struct mehcached_server_partition_conf partitions[MEHCACHED_MAX_PARTITIONS];$/;"	m	struct:mehcached_server_conf	typeref:struct:mehcached_server_conf::mehcached_server_partition_conf
+partitions	src/netbench_server.c	/^    struct mehcached_table **partitions;$/;"	m	struct:server_state	typeref:struct:server_state::mehcached_table	file:
+path	src/shm.c	/^	char path[PATH_MAX];$/;"	m	struct:mehcached_shm_page	file:
+pct	src/microbench.c	/^enum PERF_COUNT_TYPE pct[4];$/;"	v	typeref:enum:PERF_COUNT_TYPE
+pct_size	src/microbench.c	/^size_t pct_size = sizeof(pct) \/ sizeof(pct[0]);$/;"	v
+perf_count_accumulate	src/perf_count/perf_count.c	/^perf_count_accumulate(perf_count_t perf_count, int additive)$/;"	f	file:
+perf_count_ctx	src/perf_count/perf_count.c	/^struct perf_count_ctx$/;"	s	file:
+perf_count_free	src/perf_count/perf_count.c	/^perf_count_free(perf_count_t perf_count)$/;"	f
+perf_count_get_by_index	src/perf_count/perf_count.c	/^perf_count_get_by_index(perf_count_t perf_count, size_t index)$/;"	f
+perf_count_get_by_type	src/perf_count/perf_count.c	/^perf_count_get_by_type(perf_count_t perf_count, enum PERF_COUNT_TYPE type)$/;"	f
+perf_count_init	src/perf_count/perf_count.c	/^perf_count_init(const enum PERF_COUNT_TYPE *perf_count_types, size_t num_events, int system_wide)$/;"	f
+perf_count_mapping	src/perf_count/perf_count.c	/^static const struct perf_event_attr perf_count_mapping[] =$/;"	v	typeref:struct:perf_event_attr	file:
+perf_count_name	src/perf_count/perf_count.c	/^static const char *perf_count_name[] = $/;"	v	file:
+perf_count_name_by_type	src/perf_count/perf_count.c	/^perf_count_name_by_type(enum PERF_COUNT_TYPE type)$/;"	f
+perf_count_reset	src/perf_count/perf_count.c	/^perf_count_reset(perf_count_t perf_count)$/;"	f
+perf_count_start	src/perf_count/perf_count.c	/^perf_count_start(perf_count_t perf_count)$/;"	f
+perf_count_stop	src/perf_count/perf_count.c	/^perf_count_stop(perf_count_t perf_count)$/;"	f
+perf_count_t	src/perf_count/perf_count.h	/^typedef void *perf_count_t;$/;"	t
+perf_count_type_by_name	src/perf_count/perf_count.c	/^perf_count_type_by_name(const char *name)$/;"	f
+pointer_base	src/alloc_malloc.h	/^    uint8_t *pointer_base;$/;"	m	struct:mehcached_malloc
+port_id	src/netbench_server.c	/^    uint8_t port_id;$/;"	m	struct:mehcached_diagnosis_arg	file:
+port_ids	src/netbench_config.h	/^	uint8_t port_ids[MEHCACHED_MAX_PORTS];$/;"	m	struct:mehcached_server_thread_conf
+port_ids	src/netbench_config.h	/^	uint8_t port_ids[MEHCACHED_MAX_PORTS];$/;"	m	struct:mehcached_workload_thread_conf
+port_mode	src/netbench_client.c	/^    int port_mode;$/;"	m	struct:client_state	file:
+port_mode	src/netbench_server.c	/^    int port_mode;$/;"	m	struct:server_state	file:
+ports	src/netbench_config.h	/^	struct mehcached_port_conf ports[MEHCACHED_MAX_PORTS];$/;"	m	struct:mehcached_client_conf	typeref:struct:mehcached_client_conf::mehcached_port_conf
+ports	src/netbench_config.h	/^	struct mehcached_port_conf ports[MEHCACHED_MAX_PORTS];$/;"	m	struct:mehcached_server_conf	typeref:struct:mehcached_server_conf::mehcached_port_conf
+prepopulation_conf	src/netbench_server.c	/^    struct mehcached_prepopulation_conf *prepopulation_conf;$/;"	m	struct:server_state	typeref:struct:server_state::mehcached_prepopulation_conf	file:
+proc_arg	src/microbench.c	/^struct proc_arg$/;"	s	file:
+put_ratio	src/netbench_config.h	/^	double put_ratio;$/;"	m	struct:mehcached_workload_thread_conf
+qnxnto	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+qnxnto	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+ramcloud	src/netbench_server.c	/^    ramcloud_t ramcloud;$/;"	m	struct:server_state	file:
+rand_state	src/zipf.h	/^	uint64_t rand_state;$/;"	m	struct:zipf_gen_state
+record_latency	src/netbench_client.c	/^    int record_latency;$/;"	m	struct:client_state	file:
+refcount	src/shm.c	/^	size_t refcount;	\/\/ reference by mapping$/;"	m	struct:mehcached_shm_entry	file:
+remove_igb_uio_module	scripts/setup_dkdp_env.sh	/^remove_igb_uio_module()$/;"	f
+remove_mnt_huge	scripts/setup_dkdp_env.sh	/^remove_mnt_huge()$/;"	f
+reserved0	src/proto.h	/^	uint8_t reserved0;$/;"	m	struct:mehcached_batch_packet
+reserved0	src/table.h	/^    uint16_t reserved0;$/;"	m	struct:mehcached_request
+reserved1	src/table.h	/^    uint32_t reserved1;$/;"	m	struct:mehcached_request
+result	src/table.h	/^    uint8_t result;     \/\/ of enum MEHCACHED_RESULT type$/;"	m	struct:mehcached_request
+ret	src/util.h	/^    void *ret;$/;"	m	struct:mehcached_eal_malloc_arg
+ret_mbuf	src/netbench_server.c	/^    struct rte_mbuf *ret_mbuf;$/;"	m	struct:mehcached_diagnosis_arg	typeref:struct:mehcached_diagnosis_arg::rte_mbuf	file:
+rshift	src/table.h	/^    uint8_t rshift;$/;"	m	struct:mehcached_table
+rte_eal_launch	src/util.h	/^rte_eal_launch(lcore_function_t *f, void *arg, unsigned int core_id)$/;"	f
+run_test_app	scripts/setup_dkdp_env.sh	/^run_test_app()$/;"	f
+run_testpmd_app	scripts/setup_dkdp_env.sh	/^run_testpmd_app()$/;"	f
+running_threads	src/microbench.c	/^static size_t running_threads;$/;"	v	file:
+rx_deep_sleep_until	src/net_common.c	/^	uint64_t rx_deep_sleep_until;$/;"	m	struct:mehcached_queue_state	file:
+rx_full_quick_sleep_count	src/net_common.c	/^	uint16_t rx_full_quick_sleep_count;$/;"	m	struct:mehcached_queue_state	file:
+rx_inter_batch_time	src/net_common.c	/^	uint64_t rx_inter_batch_time;$/;"	m	struct:mehcached_queue_state	file:
+rx_last_seen	src/net_common.c	/^	uint64_t rx_last_seen;$/;"	m	struct:mehcached_queue_state	file:
+rx_length	src/net_common.c	/^	uint16_t rx_length;$/;"	m	struct:mehcached_queue_state	file:
+rx_mbufs	src/net_common.c	/^	struct rte_mbuf *rx_mbufs[MEHCACHED_MAX_PKT_BURST];$/;"	m	struct:mehcached_queue_state	typeref:struct:mehcached_queue_state::rte_mbuf	file:
+rx_next_to_use	src/net_common.c	/^	uint16_t rx_next_to_use;$/;"	m	struct:mehcached_queue_state	file:
+rx_quick_sleep	src/net_common.c	/^	uint16_t rx_quick_sleep;$/;"	m	struct:mehcached_queue_state	file:
+rx_sample_rand_state	src/netbench_client.c	/^    uint64_t rx_sample_rand_state;$/;"	m	struct:client_state	file:
+rx_sample_v	src/netbench_client.c	/^    uint64_t rx_sample_v;$/;"	m	struct:client_state	file:
+sbox	src/hash.c	/^const uint32_t sbox[] = $/;"	v
+sbox_hash	src/hash.h	/^static uint64_t sbox_hash(uint8_t *key, size_t len)$/;"	f
+second	src/city.h	/^  uint64 second;$/;"	m	struct:_uint128
+server_conf	src/netbench_client.c	/^    struct mehcached_server_conf *server_conf;$/;"	m	struct:client_state	typeref:struct:client_state::mehcached_server_conf	file:
+server_conf	src/netbench_server.c	/^    struct mehcached_server_conf *server_conf;$/;"	m	struct:server_state	typeref:struct:server_state::mehcached_server_conf	file:
+server_name	src/netbench_config.h	/^	char server_name[64];$/;"	m	struct:mehcached_workload_thread_conf
+server_state	src/netbench_server.c	/^struct server_state$/;"	s	file:
+set	build/gen_confs.py	/^    def set(self, num_items, key_length, value_length):$/;"	m	class:PrePopulationConf
+set_evicted	src/table.h	/^        size_t set_evicted;$/;"	m	struct:mehcached_table::__anon2
+set_inplace	src/table.h	/^        size_t set_inplace;$/;"	m	struct:mehcached_table::__anon2
+set_new	src/table.h	/^        size_t set_new;$/;"	m	struct:mehcached_table::__anon2
+set_non_numa_pages	scripts/setup_dkdp_env.sh	/^set_non_numa_pages()$/;"	f
+set_nooverwrite	src/table.h	/^        size_t set_nooverwrite;$/;"	m	struct:mehcached_table::__anon2
+set_numa_pages	scripts/setup_dkdp_env.sh	/^set_numa_pages()$/;"	f
+setup_icc	scripts/setup_dkdp_env.sh	/^setup_icc()$/;"	f
+setup_target	scripts/setup_dkdp_env.sh	/^setup_target()$/;"	f
+signal_handler	src/netbench_client.c	/^signal_handler(int signum)$/;"	f	file:
+signal_handler	src/netbench_server.c	/^signal_handler(int signum)$/;"	f	file:
+size	src/alloc_dynamic.h	/^	uint64_t size;	\/\/ the total size$/;"	m	struct:mehcached_dynamic
+size	src/alloc_pool.h	/^    uint64_t size;  \/\/ a power of two$/;"	m	struct:mehcached_pool
+size	src/util.h	/^    size_t size;$/;"	m	struct:mehcached_eal_malloc_arg
+stats	src/table.h	/^    } stats;$/;"	m	struct:mehcached_table	typeref:struct:mehcached_table::__anon2
+success_count	src/microbench.c	/^    uint64_t success_count;$/;"	m	struct:proc_arg	file:
+sys_perf_event_open	src/perf_count/perf_count.c	/^sys_perf_event_open(struct perf_event_attr *attr, pid_t pid, int cpu, int group_fd, unsigned long flags)$/;"	f	file:
+tab_hash	src/hash.h	/^static uint64_t tab_hash(const uint8_t *key, size_t len)$/;"	f
+table	src/table.h	/^    struct mehcached_table *table;$/;"	m	struct:mehcached_prefetch_state	typeref:struct:mehcached_prefetch_state::mehcached_table
+tables	src/microbench.c	/^    struct mehcached_table *tables[MEHCACHED_MAX_PARTITIONS];$/;"	m	struct:proc_arg	typeref:struct:proc_arg::mehcached_table	file:
+tail	src/alloc_pool.h	/^    uint64_t tail;  \/\/ end offset of items$/;"	m	struct:mehcached_pool
+target_request_rate	src/netbench_client.c	/^    uint32_t target_request_rate;$/;"	m	struct:client_state	file:
+target_request_rate	src/netbench_server.c	/^    uint32_t target_request_rate;   \/\/ target request rate (in ops) for each client thread$/;"	m	struct:server_state	file:
+target_request_rate_at_server	src/netbench_client.c	/^    uint32_t target_request_rate_at_server;$/;"	m	struct:client_state	file:
+target_request_rate_from_user	src/netbench_server.c	/^static uint32_t target_request_rate_from_user;$/;"	v	file:
+test_basic	src/test.c	/^test_basic()$/;"	f
+test_found	src/table.h	/^        size_t test_found;$/;"	m	struct:mehcached_table::__anon2
+test_load	src/load.c	/^test_load()$/;"	f
+test_notfound	src/table.h	/^        size_t test_notfound;$/;"	m	struct:mehcached_table::__anon2
+theta	src/zipf.h	/^	double theta;		\/\/ skewness (input) in (0, 1); or, 0 = uniform, 1 = always zero$/;"	m	struct:zipf_gen_state
+thread_id	build/gen_confs.py	/^    def thread_id(self, partition_id): pass$/;"	m	class:ConcurrencyModel
+thread_id	build/gen_confs.py	/^    def thread_id(self, partition_id): return 0     # all writes go to core 0$/;"	m	class:CREW0
+thread_id	build/gen_confs.py	/^    def thread_id(self, partition_id): return partition_id % 16$/;"	m	class:EREW
+thread_id	build/gen_confs.py	/^    def thread_id(self, partition_id): return self.thread_id_list[partition_id]$/;"	m	class:LB
+thread_id	src/netbench_client.c	/^    uint8_t thread_id;$/;"	m	struct:client_state	file:
+thread_id	src/netbench_config.h	/^	uint8_t thread_id;$/;"	m	struct:mehcached_server_hot_item_conf
+thread_id	src/netbench_config.h	/^	uint8_t thread_id;$/;"	m	struct:mehcached_server_partition_conf
+threads	src/netbench_config.h	/^	struct mehcached_server_thread_conf threads[MEHCACHED_MAX_THREADS];$/;"	m	struct:mehcached_server_conf	typeref:struct:mehcached_server_conf::mehcached_server_thread_conf
+threads	src/netbench_config.h	/^	struct mehcached_workload_thread_conf threads[MEHCACHED_MAX_WORKLOAD_THREADS];$/;"	m	struct:mehcached_workload_conf	typeref:struct:mehcached_workload_conf::mehcached_workload_thread_conf
+thres	src/zipf.h	/^	double thres;		\/\/ only depends on theta$/;"	m	struct:zipf_gen_state
+to_remove	src/shm.c	/^	size_t to_remove;	\/\/ remove entry when refcount == 0$/;"	m	struct:mehcached_shm_entry	file:
+true	src/basic_types.h	21;"	d
+tx_length	src/net_common.c	/^	uint16_t tx_length;$/;"	m	struct:mehcached_queue_state	file:
+tx_mbufs	src/net_common.c	/^	struct rte_mbuf *tx_mbufs[MEHCACHED_MAX_PKT_BURST];$/;"	m	struct:mehcached_queue_state	typeref:struct:mehcached_queue_state::rte_mbuf	file:
+types	src/perf_count/perf_count.c	/^	enum PERF_COUNT_TYPE *types;$/;"	m	struct:perf_count_ctx	typeref:enum:perf_count_ctx::PERF_COUNT_TYPE	file:
+uint128	src/city.h	/^typedef struct _uint128 uint128;$/;"	t	typeref:struct:_uint128
+uint32	src/city.h	/^typedef uint32_t uint32;$/;"	t
+uint32_in_expected_order	src/city.c	52;"	d	file:
+uint32_in_expected_order	src/city.c	72;"	d	file:
+uint64	src/city.h	/^typedef uint64_t uint64;$/;"	t
+uint64_in_expected_order	src/city.c	53;"	d	file:
+uint64_in_expected_order	src/city.c	73;"	d	file:
+uint8	src/city.h	/^typedef uint8_t uint8;$/;"	t
+uninstall_targets	scripts/setup_dkdp_env.sh	/^uninstall_targets()$/;"	f
+value_length	src/microbench.c	/^    size_t value_length;$/;"	m	struct:proc_arg	file:
+value_length	src/netbench_config.h	/^	size_t value_length;$/;"	m	struct:mehcached_prepopulation_conf
+value_length	src/netbench_config.h	/^	size_t value_length;$/;"	m	struct:mehcached_workload_thread_conf
+version	src/table.h	/^    uint32_t version;   \/\/ XXX: is uint32_t wide enough?$/;"	m	struct:mehcached_bucket
+volatile	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
+workload_conf	src/netbench_client.c	/^    struct mehcached_workload_conf *workload_conf;$/;"	m	struct:client_state	typeref:struct:client_state::mehcached_workload_conf	file:
+write	build/gen_confs.py	/^    def write(self, f):$/;"	m	class:ClientConf
+write	build/gen_confs.py	/^    def write(self, f):$/;"	m	class:PrePopulationConf
+write	build/gen_confs.py	/^    def write(self, f):$/;"	m	class:ServerConf
+write	build/gen_confs.py	/^    def write(self, f):$/;"	m	class:WorkloadConf
+zetan	src/zipf.h	/^	double zetan;$/;"	m	struct:zipf_gen_state
+zipf_gen_state	src/zipf.h	/^struct zipf_gen_state$/;"	s
+zipf_theta	src/netbench_config.h	/^	double zipf_theta;$/;"	m	struct:mehcached_workload_thread_conf

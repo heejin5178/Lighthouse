@@ -317,8 +317,8 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
     const size_t num_items = 16 * 1048576;
     const size_t num_partitions = 16;
 
-    const size_t num_threads = 16;
-    const size_t num_operations = 16 * 1048576;
+    const size_t num_threads = 4;
+    const size_t num_operations = 1048576;
     const size_t max_num_operatios_per_thread = num_operations;
 
     const size_t key_length = MEHCACHED_ROUNDUP8(8);
@@ -336,10 +336,12 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
     bool concurrent_alloc_write = (concurrency_mode >= CONCURRENCY_MODE_CRCWS);
 
     printf("initializing shm\n");
-	const size_t page_size = 1048576 * 2;
-	const size_t num_numa_nodes = 2;
-    const size_t num_pages_to_try = 16384;
-    const size_t num_pages_to_reserve = 16384 - 2048;   // give 2048 pages to dpdk
+    const size_t page_size = 2097152;
+    const size_t num_numa_nodes = 2;
+    const size_t num_pages_to_try = 6144;
+    const size_t num_pages_to_reserve = 6144 - 2048;   // give 2048 pages to dpdk
+    //const size_t num_pages_to_try = 16384;
+    //const size_t num_pages_to_reserve = 16384 - 2048;   // give 2048 pages to dpdk
 
 	mehcached_shm_init(page_size, num_numa_nodes, num_pages_to_try, num_pages_to_reserve);
 
@@ -356,7 +358,8 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
 	int rte_argc = sizeof(rte_argv) / sizeof(rte_argv[0]);
 
     rte_set_log_level(RTE_LOG_NOTICE);
-
+	
+    	printf("cpu_mask: %lu, memory_str: %s, rte_argc: %d\n", cpu_mask, memory_str, rte_argc);
 	int ret = rte_eal_init(rte_argc, rte_argv);
 	if (ret < 0)
 		rte_panic("Cannot init EAL\n");
@@ -584,6 +587,7 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
         for (thread_id = 0; thread_id < num_threads; thread_id++)
         {
             args[thread_id].op_count = op_count[thread_id];
+	    printf("op count: %d\n", op_count[thread_id]);
             args[thread_id].benchmark_mode = benchmark_mode;
             args[thread_id].junk = 0;
             args[thread_id].success_count = 0;

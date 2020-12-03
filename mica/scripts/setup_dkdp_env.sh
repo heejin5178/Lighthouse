@@ -252,7 +252,7 @@ ls_mnt_huge()
 
 
 export RTE_SDK=`readlink -f $(dirname ${BASH_SOURCE[0]})/../../DPDK`
-export RTE_TARGET=x86_64-default-linuxapp-gcc
+export RTE_TARGET=x86_64-native-linuxapp-gcc
 
 pushd "$RTE_SDK"; setup_target; popd
 
