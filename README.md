@@ -12,6 +12,6 @@ For compilation of DPDK, you can modify value of `DPDK_COMPILE`.
 Please note that `DPDK_COMPILE` is slightly unstable.
 
 ## Contributors
-Shean Kimi
+Shean Kim
 
 Heejin Yoon
