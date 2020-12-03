@@ -3,4 +3,4 @@
 Advanced Computer Network Project
 
 Heejin Yoon
-Sheun Kim
+Shean Kim
