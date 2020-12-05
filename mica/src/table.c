@@ -704,8 +704,6 @@ mehcached_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table 
             if (version_start != mehcached_read_version_end(table, bucket))
                 continue;
             MEHCACHED_STAT_INC(table, get_notfound);
-	    printf("not found = 0\n");
-	    exit(1);
             return false;
         }
 
@@ -728,12 +726,10 @@ mehcached_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table 
 
         expire_time = item->expire_time;
 
-        //size_t key_length = MEHCACHED_KEY_LENGTH(item->kv_length_vec);
         size_t key_length = item->key_length_vec;
         if (key_length > MEHCACHED_MAX_KEY_LENGTH)
             key_length = MEHCACHED_MAX_KEY_LENGTH;  // fix-up for possible garbage read
 
-        //size_t value_length = MEHCACHED_VALUE_LENGTH(item->kv_length_vec);
         size_t value_length = item->value->value_length_vec;
         if (value_length > MEHCACHED_MAX_VALUE_LENGTH)
             value_length = MEHCACHED_MAX_VALUE_LENGTH;  // fix-up for possible garbage read
@@ -744,8 +740,8 @@ mehcached_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table 
         if (value_length > 1500)
         {
 #ifdef MEHCACHED_ALLOC_POOL
-            fprintf(stderr, "head %lu\n", table->value_alloc[alloc_id].head);
-            fprintf(stderr, "tail %lu\n", table->value_alloc[alloc_id].tail);
+            fprintf(stderr, "head %lu\n", table->alloc[alloc_id].head);
+            fprintf(stderr, "tail %lu\n", table->alloc[alloc_id].tail);
 #endif
             fprintf(stderr, "item_offset %lu\n", item_offset);
         }
@@ -754,7 +750,7 @@ mehcached_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table 
 #ifdef MEHCACHED_ALLOC_POOL
         // for move-to-head
         // this does not use item->alloc_item.item_size to discard currently unused space within the item
-        uint32_t value_item_size = (uint32_t)(sizeof(struct mehcached_value_item) +  MEHCACHED_ROUNDUP8(value_length));
+        uint32_t item_size = (uint32_t)(sizeof(struct mehcached_item) + MEHCACHED_ROUNDUP8(key_length) + MEHCACHED_ROUNDUP8(value_length));
 #endif
 
         // adjust value length to use
@@ -765,10 +761,10 @@ mehcached_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table 
         }
         else
             partial_value = false;
-        mehcached_memcpy8(out_value, item->value->data, value_length);
+        mehcached_memcpy8(out_value, item->data + MEHCACHED_ROUNDUP8(key_length), value_length);
 
 #ifdef MEHCACHED_ALLOC_POOL
-        if (!mehcached_pool_is_valid(&table->value_alloc[alloc_id], item_offset))
+        if (!mehcached_pool_is_valid(&table->alloc[alloc_id], item_offset))
         {
             if (version_start != mehcached_read_version_end(table, bucket))
                 continue;
@@ -788,8 +784,6 @@ mehcached_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table 
                 mehcached_unlock_bucket(table, bucket);
             }
 
-	    printf("not found -1 \n");
-	    exit(1);
             MEHCACHED_STAT_INC(table, get_notfound);
             return false;
         }
@@ -891,6 +885,7 @@ mehcached_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table 
     return true;
 }
 
+
 static
 bool
 mehcached_test(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table *table, uint64_t key_hash, const uint8_t *key, size_t key_length)
@@ -920,14 +915,10 @@ mehcached_test(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table
         else
         {
             MEHCACHED_STAT_INC(table, test_notfound);
-	    printf(" not found = 2\n");
-	    exit(1);
             return false;
         }
     }
 
-    printf("not found = 3\n");
-    exit(1);
     // not reachable
     return false;
 }
