@@ -261,7 +261,7 @@ void
 mehcached_prefetch_alloc(struct mehcached_prefetch_state *in_out_prefetch_state);
 
 static
-bool
+struct mehcached_value_item*
 mehcached_get(uint8_t current_alloc_id, struct mehcached_table *table, uint64_t key_hash, const uint8_t *key, size_t key_length, uint8_t *out_value, size_t *in_out_value_length, uint32_t *out_expire_time, bool readonly);
 
 static

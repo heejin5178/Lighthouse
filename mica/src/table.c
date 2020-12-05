@@ -680,7 +680,7 @@ mehcached_prefetch_alloc(struct mehcached_prefetch_state *in_out_prefetch_state)
 }
 
 static
-bool
+struct mehcached_value_item* 
 mehcached_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table *table, uint64_t key_hash, const uint8_t *key, size_t key_length, uint8_t *out_value, size_t *in_out_value_length, uint32_t *out_expire_time, bool readonly MEHCACHED_UNUSED)
 {
     assert(key_length <= MEHCACHED_MAX_KEY_LENGTH);
@@ -693,6 +693,7 @@ mehcached_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table 
     bool partial_value;
     uint32_t expire_time;
 
+    struct mehcached_value_item* return_value = NULL;
     while (true)
     {
         uint32_t version_start = mehcached_read_version_begin(table, bucket);
@@ -704,7 +705,8 @@ mehcached_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table 
             if (version_start != mehcached_read_version_end(table, bucket))
                 continue;
             MEHCACHED_STAT_INC(table, get_notfound);
-            return false;
+            //return false;
+	    return return_value;
         }
 
         uint64_t item_vec = located_bucket->item_vec[item_index];
@@ -785,7 +787,8 @@ mehcached_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table 
             }
 
             MEHCACHED_STAT_INC(table, get_notfound);
-            return false;
+            //return false;
+	    return return_value;
         }
 #endif
 
@@ -805,6 +808,7 @@ mehcached_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table 
         // the following is optional processing (we will return the value retrieved above)
 
         MEHCACHED_STAT_INC(table, get_found);
+	return_value = item->value;
 
 #ifdef MEHCACHED_ALLOC_POOL
         if (!readonly && alloc_id == current_alloc_id)
@@ -882,7 +886,7 @@ mehcached_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table 
         assert(false);
 #endif
 
-    return true;
+    return return_value;
 }
 
 

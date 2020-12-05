@@ -294,6 +294,7 @@ benchmark_proc(void *arg)
                         if (mehcached_get(alloc_id, table, op_key_hashes[i], op_keys + (size_t)i * key_length, key_length, value, &value_length, NULL, readonly))
                             success_count++;
                         junk += (uint64_t)value[0];
+			//printf("item_get result %lu\n", item_get(alloc_id, table, op_key_hashes[i], op_keys + (size_t)i * key_length, key_length, value, &value_length, NULL, readonly));
                     }
                     else
                     {
@@ -617,7 +618,6 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
                 if (concurrency_mode <= CONCURRENCY_MODE_EREW)
 		{
                     thread_id = owner_thread_id[partition_id];
-		    printf("thread id %d\n", thread_id);
 		}
                 else
                     thread_id = (owner_thread_id[partition_id] % 2) + (mehcached_rand(&thread_rand_state) % (num_threads / 2)) * 2;
