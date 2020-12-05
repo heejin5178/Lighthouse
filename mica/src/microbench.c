@@ -472,7 +472,7 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
     }
 
     benchmark_mode_t benchmark_mode;
-    for (benchmark_mode = 0; benchmark_mode < BENCHMARK_MODE_MAX; benchmark_mode++)
+    for (benchmark_mode = 0; benchmark_mode < BENCHMARK_MODE_SET; benchmark_mode++)
     {
         switch (benchmark_mode)
         {

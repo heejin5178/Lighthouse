@@ -160,6 +160,7 @@ mehcached_pool_push_tail(struct mehcached_pool *alloc, uint32_t item_size)
 
     uint64_t item_offset = alloc->tail;
 
+    printf("pool push tail item offset : %lu\n", item_offset);
     uint64_t v = item_offset + item_size;
     while (v > alloc->head + alloc->size)
         mehcached_pool_pop_head(alloc);
@@ -188,6 +189,7 @@ static
 uint64_t
 mehcached_pool_allocate(struct mehcached_pool *alloc, uint32_t item_size)
 {
+	printf("pool allocate: %u\n", item_size);
     return mehcached_pool_push_tail(alloc, item_size);
 }
 

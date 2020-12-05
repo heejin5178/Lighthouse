@@ -94,32 +94,33 @@ struct mehcached_bucket
 #endif
 };
 
-struct mehcached_item
+struct mehcached_value_item
 {
     struct mehcached_alloc_item alloc_item;
-
-    uint32_t kv_length_vec; // key_length: 8, value_length: 24; kv_length_vec == 0: empty item
-
-    #define MEHCACHED_KEY_MASK (((uint32_t)1 << 8) - 1)
-    #define MEHCACHED_KEY_LENGTH(kv_length_vec) ((kv_length_vec) >> 24)
-
-    #define MEHCACHED_VALUE_MASK (((uint32_t)1 << 24) - 1)
-    #define MEHCACHED_VALUE_LENGTH(kv_length_vec) ((kv_length_vec) & MEHCACHED_VALUE_MASK)
-
-    #define MEHCACHED_KV_LENGTH_VEC(key_length, value_length) (((uint32_t)(key_length) << 24) | (uint32_t)(value_length))
-
+    uint32_t value_length_vec; // key_length: 8, value_length: 24; kv_length_vec == 0: empty item
     // the rest is meaningful only when kv_length_vec != 0
     uint32_t expire_time;
-    uint64_t key_hash;
     uint8_t data[0];
 };
 
+
+struct mehcached_item
+{
+    struct mehcached_alloc_item alloc_item;
+    uint32_t key_length_vec; // key_length: 8, value_length: 24; kv_length_vec == 0: empty item
+    // the rest is meaningful only when kv_length_vec != 0
+    uint32_t expire_time;
+    uint64_t key_hash;
+    struct mehcached_value_item* value;
+    uint8_t data[0];
+};
 #define MEHCACHED_MAX_POOLS (16)
 
 struct mehcached_table
 {
 #ifdef MEHCACHED_ALLOC_POOL
     struct mehcached_pool alloc[MEHCACHED_MAX_POOLS];
+    struct mehcached_pool value_alloc[MEHCACHED_MAX_POOLS];
     uint8_t alloc_id_mask;
     uint64_t mth_threshold;
 #endif
@@ -128,6 +129,7 @@ struct mehcached_table
 #endif
 #ifdef MEHCACHED_ALLOC_DYNAMIC
     struct mehcached_dynamic alloc;
+    struct mehcached_dynamic value_alloc;
 #endif
 
     struct mehcached_bucket *buckets;
@@ -231,12 +233,16 @@ uint16_t
 mehcached_calc_tag(uint64_t key_hash);
 
 static
-void
-mehcached_set_item(struct mehcached_item *item, uint64_t key_hash, const uint8_t *key, uint32_t key_length, const uint8_t *value, uint32_t value_length, uint32_t expire_time);
+struct mehcached_value_item*
+mehcached_set_value_item(struct mehcached_value_item *item, const uint8_t *value, uint32_t value_length, uint32_t expire_time);
 
 static
 void
-mehcached_set_item_value(struct mehcached_item *item, const uint8_t *value, uint32_t value_length, uint32_t expire_time);
+mehcached_set_item(struct mehcached_item *item, uint64_t key_hash, const uint8_t *key, uint32_t key_length, struct mehcached_value_item* value, uint32_t expire_time);
+
+static
+void
+mehcached_set_item_value(struct mehcached_value_item *item, const uint8_t *value, uint32_t value_length, uint32_t expire_time);
 
 static
 bool

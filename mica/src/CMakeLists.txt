@@ -66,7 +66,7 @@ set(RTE_TARGET x86_64-native-linuxapp-gcc)
 add_definitions(-DUSE_DPDK)
 add_definitions(-isystem ${RTE_SDK}/${RTE_TARGET}/include -include rte_config.h)
 #add_definitions(-isystem ${RTE_SDK}/include/dpdk -include rte_config.h)
-link_directories(${LINK_DIRECTORIES} ${RTE_SDK}/${RTE_TARGET}/lib)
+link_directories(${LINK_DIRECTORIES} ${RTE_SDK}/lib)
 #link_directories(${LINK_DIRECTORIES} ${RTE_SDK}/lib)
 set(LIBRARIES ${LIBRARIES} rte_eal rte_mempool rte_ring)	# for basic features
 set(LIBRARIES ${LIBRARIES} rte_ethdev rte_mbuf rte_pmd_ixgbe librte_pmd_ring.a)	# for network features
