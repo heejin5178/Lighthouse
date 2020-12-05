@@ -43,6 +43,46 @@
 enum PERF_COUNT_TYPE pct[4];
 size_t pct_size = sizeof(pct) / sizeof(pct[0]);
 
+// return size of value
+static
+size_t
+item_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table *table, uint64_t key_hash, const uint8_t *key, size_t key_length, uint8_t *out_value, size_t *in_out_value_length, uint32_t *out_expire_time, bool readonly MEHCACHED_UNUSED)
+{
+    uint32_t bucket_index = mehcached_calc_bucket_index(table, key_hash);
+    uint16_t tag = mehcached_calc_tag(key_hash);
+
+    struct mehcached_bucket *bucket = table->buckets + bucket_index;
+    uint32_t version_start = mehcached_read_version_begin(table, bucket);
+
+    struct mehcached_bucket *located_bucket;
+
+	// almost code is from find_item_index
+        for (size_t item_index = 0; item_index < MEHCACHED_ITEMS_PER_BUCKET; item_index++)
+        {
+            if (MEHCACHED_TAG(bucket->item_vec[item_index]) != tag)
+                continue;
+#ifdef MEHCACHED_ALLOC_POOL
+            uint8_t alloc_id = MEHCACHED_ALLOC_ID(bucket->item_vec[item_index]);
+            struct mehcached_item *item = (struct mehcached_item *)mehcached_pool_item(&table->alloc[alloc_id], MEHCACHED_ITEM_OFFSET(bucket->item_vec[item_index]));
+
+            if (item->key_hash != key_hash)
+                continue;
+
+            if (!mehcached_compare_keys(item->data, item->key_length_vec, key, key_length))
+                continue;
+
+            //return item_index;
+	    return item->value->value_length_vec;
+
+        if (!mehcached_has_extra_bucket(bucket))
+            break;
+        bucket = mehcached_extra_bucket(table, bucket->next_extra_bucket_index);
+#else
+	    printf("I didn't prepare other case..\n");
+#endif
+    }    
+}
+
 perf_count_t
 benchmark_perf_count_init()
 {
@@ -144,11 +184,14 @@ struct proc_arg
     // size_t *existing_items;
 };
 
+//heejin thread will be distributed by this func
 static
 uint16_t
 mehcached_get_partition_id(uint64_t key_hash, uint16_t num_partitions)
 {
-    return (uint16_t)(key_hash >> 48) & (uint16_t)(num_partitions - 1);
+    //return (uint16_t)(key_hash >> 48) & (uint16_t)(num_partitions - 1);
+    uint16_t partition_id = (uint16_t)(key_hash >> 48) & (uint16_t)(num_partitions - 1);
+    return partition_id;
 }
 
 int
@@ -211,6 +254,7 @@ benchmark_proc(void *arg)
                     struct mehcached_table *table = tables[op_key_parts[i]];
                     if (mehcached_set(alloc_id, table, op_key_hashes[i], op_keys + (size_t)i * key_length, key_length, op_values + (size_t)i * value_length, value_length, 0, false))
                         success_count++;
+
                 }
             }
             break;
@@ -453,6 +497,7 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
         mehcached_table_init(tables[partition_id], (num_items + MEHCACHED_ITEMS_PER_BUCKET - 1) / MEHCACHED_ITEMS_PER_BUCKET / num_partitions, 1, num_items * /*MEHCACHED_ROUNDUP64*/(alloc_overhead + key_length + value_length + (num_partitions - 1)) / 1 / num_partitions, concurrent_table_read, concurrent_table_write, concurrent_alloc_write, table_numa_node, alloc_numa_nodes, mth_threshold);
     }
 
+    printf("num partition: %d\n", num_partitions);
     for (thread_id = 0; thread_id < num_threads; thread_id++)
     {
         args[thread_id].num_threads = num_threads;
@@ -562,10 +607,18 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
             bool is_get = op_r <= get_threshold;
 
             size_t thread_id;
+	    /*
+	    for(int i=0;i<16;i++)
+		    printf("thread id is %lu\n", owner_thread_id[i]);
+	    exit(1);
+	    */
             if (is_get)
             {
                 if (concurrency_mode <= CONCURRENCY_MODE_EREW)
+		{
                     thread_id = owner_thread_id[partition_id];
+		    printf("thread id %d\n", thread_id);
+		}
                 else
                     thread_id = (owner_thread_id[partition_id] % 2) + (mehcached_rand(&thread_rand_state) % (num_threads / 2)) * 2;
             }
