@@ -317,7 +317,7 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
     const size_t num_items = 16 * 1048576;
     const size_t num_partitions = 16;
 
-    const size_t num_threads = 4;
+    const size_t num_threads = 1;
     const size_t num_operations = 1048576;
     const size_t max_num_operatios_per_thread = num_operations;
 
@@ -472,8 +472,9 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
     }
 
     benchmark_mode_t benchmark_mode;
-    for (benchmark_mode = 0; benchmark_mode < BENCHMARK_MODE_SET; benchmark_mode++)
+    for (benchmark_mode = 0; benchmark_mode < BENCHMARK_MODE_GET_SET_95; benchmark_mode++)
     {
+	    printf("START BENCHMARK : %d\n", benchmark_mode);
         switch (benchmark_mode)
         {
             case BENCHMARK_MODE_ADD:
