@@ -46,7 +46,7 @@ size_t pct_size = sizeof(pct) / sizeof(pct[0]);
 // return size of value
 static
 size_t
-item_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table *table, uint64_t key_hash, const uint8_t *key, size_t key_length, uint8_t *out_value, size_t *in_out_value_length, uint32_t *out_expire_time, bool readonly MEHCACHED_UNUSED)
+item_get(uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table *table, uint64_t key_hash, const uint8_t *key, size_t key_length)
 {
     uint32_t bucket_index = mehcached_calc_bucket_index(table, key_hash);
     uint16_t tag = mehcached_calc_tag(key_hash);
@@ -187,11 +187,33 @@ struct proc_arg
 //heejin thread will be distributed by this func
 static
 uint16_t
-mehcached_get_partition_id(uint64_t key_hash, uint16_t num_partitions)
+mehcached_get_partition_id(uint64_t key_hash, uint16_t num_partitions, bool is_get, size_t value_length, uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table *table, uint64_t key_hash, const uint8_t *key, size_t key_length, size_t* value_lengths)
 {
     //return (uint16_t)(key_hash >> 48) & (uint16_t)(num_partitions - 1);
+    /* 
+    printf("is_get: %d, value_length: %lu\n", is_get, value_length);
     uint16_t partition_id = (uint16_t)(key_hash >> 48) & (uint16_t)(num_partitions - 1);
     return partition_id;
+    */
+    uint16_t partition_id;
+    static size_t num_items = 0;
+
+    if(is_get) {
+    	partition_id = small_core[];
+	value_length = item_get(current_alloc_id, table, key_hash, key, key_length); // [CHECK]
+    }
+    else {
+    	value_lengths[num_items++] = value_length;
+    }
+
+    if (is_large(value_lengths, num_items, value_length)) { // [CHECK]
+	partition_id = large_core[];
+    }
+    else {
+	partition_id = small_core[];
+   }
+
+   return partition_id;
 }
 
 int
@@ -334,6 +356,11 @@ benchmark_proc(void *arg)
 	return 0;
 }
 
+void 
+core_init(size_t* large_cores, size_t* small_cores, size_t large_core_num, size_t small_core_num){
+	// size_t core
+}
+
 void
 benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double mth_threshold)
 {
@@ -368,7 +395,9 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
 
     const size_t key_length = MEHCACHED_ROUNDUP8(8);
     const size_t value_length = MEHCACHED_ROUNDUP8(8);
-
+    
+    size_t value_lengths[num_items] = {0, };
+    
     size_t alloc_overhead = sizeof(struct mehcached_item);
 #ifdef MEHCACHED_ALLOC_DYNAMIC
     alloc_overhead += MEHCAHCED_DYNAMIC_OVERHEAD;
@@ -409,6 +438,12 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
 	if (ret < 0)
 		rte_panic("Cannot init EAL\n");
 
+    double rate = 0.2; // [SHEAN] It will be set by user setting.
+    size_t large_core_num = (cpu_mask + 1) * rate;
+    size_t small_core_num = (cpu_mask + 1) - large_core_num;
+
+    size_t large_cores[large_core_num] = {0,};
+    size_t small_cores[small_core_num] = {0,};
 
     printf("allocating memory\n");
     uint8_t *keys = (uint8_t *)mehcached_shm_malloc_striped(key_length * num_items * 2);
@@ -473,7 +508,8 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
     {
         *(size_t *)(keys + i * key_length) = i;
         *(key_hashes + i) = hash(keys + i * key_length, key_length);
-        *(key_parts + i) = mehcached_get_partition_id(*(key_hashes + i), (uint16_t)num_partitions);
+	/* [SHEAN] value_length is constant value ? */
+        *(key_parts + i) = mehcached_get_partition_id(*(key_hashes + i), (uint16_t)num_partitions, op_types[i] == 0, value_length, alloc_id, table, op_key_hashes[i], op_keys + (size_t)i * key_length, key_length, value_lengths);
         *(size_t *)(values + i * value_length) = i;
     }
     printf("\n");
