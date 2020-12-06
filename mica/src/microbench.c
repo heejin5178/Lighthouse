@@ -31,17 +31,22 @@
 #include <rte_log.h>
 #include <rte_debug.h>
 
+#include "../cdf/cdf.h"
 //#define USE_PERF_COUNT
 #define USE_PREFETCHING
 #define PREFETCH_GAP (1)
 #define PREFETCH_PIPELINE (PREFETCH_GAP * 2)
 
+//if LARGE_PORTION==5, only 20% of partition and thread will be used for large items
+#define LARGE_PORTION 5
 // #ifdef NDEBUG
 // #undef NDEBUG
 // #endif
 
 enum PERF_COUNT_TYPE pct[4];
 size_t pct_size = sizeof(pct) / sizeof(pct[0]);
+
+static size_t value_length_idx = 0;
 
 // return size of value
 static
@@ -187,33 +192,25 @@ struct proc_arg
 //heejin thread will be distributed by this func
 static
 uint16_t
-mehcached_get_partition_id(uint64_t key_hash, uint16_t num_partitions, bool is_get, size_t value_length, uint8_t current_alloc_id MEHCACHED_UNUSED, struct mehcached_table *table, uint64_t key_hash, const uint8_t *key, size_t key_length, size_t* value_lengths)
+mehcached_get_partition_id(uint64_t key_hash, bool is_get, size_t item_length, int num_large_partitions, int num_small_partitions, int* value_lengths)
 {
-    //return (uint16_t)(key_hash >> 48) & (uint16_t)(num_partitions - 1);
-    /* 
-    printf("is_get: %d, value_length: %lu\n", is_get, value_length);
-    uint16_t partition_id = (uint16_t)(key_hash >> 48) & (uint16_t)(num_partitions - 1);
-    return partition_id;
-    */
-    uint16_t partition_id;
-    static size_t num_items = 0;
+	uint16_t partition_id;
 
-    if(is_get) {
-    	partition_id = small_core[];
-	value_length = item_get(current_alloc_id, table, key_hash, key, key_length); // [CHECK]
+	double cdf = CDF_update(value_lengths, value_length_idx, (int)item_length);
+#ifdef DEBUG
+	printf("[Get partition id] large partition : %d, small partition : %d\n", num_large_partitions, num_small_partitions);
+#endif
+
+    if (is_large(cdf)) { // [CHECK]
+	//partition_id = large_core[];
+	partition_id = (uint16_t)(key_hash >> 48) & (uint16_t)(num_large_partitions - 1) + num_small_partitions;
     }
     else {
-    	value_lengths[num_items++] = value_length;
-    }
-
-    if (is_large(value_lengths, num_items, value_length)) { // [CHECK]
-	partition_id = large_core[];
-    }
-    else {
-	partition_id = small_core[];
+	partition_id = (uint16_t)(key_hash >> 48) & (uint16_t)(num_small_partitions-1);
    }
-
-   return partition_id;
+    value_length_idx++; 
+    //printf("%d th partition_id is %u\n", value_length_idx, partition_id);
+    return partition_id;
 }
 
 int
@@ -389,14 +386,28 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
     const size_t num_items = 16 * 1048576;
     const size_t num_partitions = 16;
 
-    const size_t num_threads = 4;
+    //large core is last 20% cores
+    //e.g., We have 16 cores, then only 1 core is used for large core
+    int num_large_partitions = num_partitions / LARGE_PORTION;
+    if(num_partitions % LARGE_PORTION != 0) {
+	num_large_partitions++;
+    }
+    int num_small_partitions = num_partitions - num_large_partitions;
+
+    const size_t num_threads = 8;
     const size_t num_operations = 1048576;
     const size_t max_num_operatios_per_thread = num_operations;
 
     const size_t key_length = MEHCACHED_ROUNDUP8(8);
     const size_t value_length = MEHCACHED_ROUNDUP8(8);
     
-    size_t value_lengths[num_items] = {0, };
+    int* value_lengths = malloc(sizeof(int) * num_items); //heejin) variable-sized object may not be initialized(error occured)
+    printf("value length addr %p\n", value_lengths);
+    for(int i = 0; i < num_items; i++) {
+	value_lengths[i] = value_length;
+    }
+  
+    qsort(value_lengths, num_items, sizeof(int), comp); 
     
     size_t alloc_overhead = sizeof(struct mehcached_item);
 #ifdef MEHCACHED_ALLOC_DYNAMIC
@@ -442,8 +453,8 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
     size_t large_core_num = (cpu_mask + 1) * rate;
     size_t small_core_num = (cpu_mask + 1) - large_core_num;
 
-    size_t large_cores[large_core_num] = {0,};
-    size_t small_cores[small_core_num] = {0,};
+    //size_t large_cores[large_core_num] = {0,};
+    //size_t small_cores[small_core_num] = {0,};
 
     printf("allocating memory\n");
     uint8_t *keys = (uint8_t *)mehcached_shm_malloc_striped(key_length * num_items * 2);
@@ -509,19 +520,38 @@ benchmark(const concurrency_mode_t concurrency_mode, double zipf_theta, double m
         *(size_t *)(keys + i * key_length) = i;
         *(key_hashes + i) = hash(keys + i * key_length, key_length);
 	/* [SHEAN] value_length is constant value ? */
-        *(key_parts + i) = mehcached_get_partition_id(*(key_hashes + i), (uint16_t)num_partitions, op_types[i] == 0, value_length, alloc_id, table, op_key_hashes[i], op_keys + (size_t)i * key_length, key_length, value_lengths);
         *(size_t *)(values + i * value_length) = i;
+	*(key_parts + i) = mehcached_get_partition_id(*(key_hashes + i), false, value_length, num_large_partitions, num_small_partitions, value_lengths);
     }
+    printf("genearting done..\n");
     printf("\n");
-
+#ifdef DEBUG
+    	printf("start debug... -> printing value lengths");
+	for(int loop = 0; loop < num_items; loop++) {
+		printf("[%d] : %lu\n", i, value_lengths[i]);
+	}
+#endif
     perf_count_t pc = benchmark_perf_count_init();
 
     size_t mem_start = mehcached_get_memuse();
 
     size_t partition_id;
+    int num_large_thread = num_threads / LARGE_PORTION;
+    if(num_threads % LARGE_PORTION != 0) {
+	num_large_thread++;
+    }
+    int num_small_thread = num_threads - num_large_thread;
     for (partition_id = 0; partition_id < num_partitions; partition_id++)
     {
-        owner_thread_id[partition_id] = partition_id % num_threads;
+	// heejin modify this part to assign proper partition id to thread id
+        //owner_thread_id[partition_id] = partition_id % num_threads;
+	for(int large_partition = num_small_partitions; large_partition < num_partitions; large_partition++) {
+		owner_thread_id[large_partition] = large_partition % num_large_thread + num_small_thread;	
+	}
+	for(int small_partition = 0; small_partition < num_small_partitions; small_partition++) {
+		owner_thread_id[small_partition] = small_partition % num_small_thread;
+	}
+
 
         size_t table_numa_node = rte_lcore_to_socket_id((unsigned int)owner_thread_id[partition_id]);
         // TODO: support CRCW (multiple allocs)
