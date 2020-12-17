@@ -9,6 +9,7 @@
 #include "mica/util/hash.h"
 #include "mica/util/zipf.h"
 #include "mica/util/tsc.h"
+#define LARGE_PORTION 16 
 
 struct LTableConfig : public ::mica::table::BasicLossyLTableConfig {
   // struct LTableConfig : public ::mica::table::BasicLosslessLTableConfig {
@@ -64,6 +65,10 @@ struct Task {
 
   uint64_t success_count;
   uint64_t total_operation_count;
+
+  int* value_array;
+  int num_small_partitions;
+  int num_large_partitions;
   // size_t num_existing_items;
   // size_t* existing_items;
 } __attribute__((aligned(128)));  // To prevent false sharing caused by
@@ -109,6 +114,10 @@ class RequestAccessor : public ::mica::processor::RequestAccessorInterface {
     return task_.key_length;
   }
 
+  int* get_value_array(void) {
+    return task_.value_array;
+  }
+
   const char* get_value(size_t index) {
     assert(index < task_.count);
     return task_.values + index * task_.value_length;
@@ -145,6 +154,14 @@ class RequestAccessor : public ::mica::processor::RequestAccessorInterface {
   void retire(size_t index) {
     assert(index < task_.count);
     (void)index;
+  }
+
+  int get_num_small_partitions(void) {
+    return task_.num_small_partitions;
+  }
+
+  int get_num_large_partitions(void) {
+    return task_.num_large_partitions;
   }
 
  private:
@@ -271,14 +288,26 @@ void benchmark(double zipf_theta) {
   double set_1_ops = -1.;
   double get_1_ops = -1.;
 
-  printf("generating %zu items (including %zu miss items)\n", num_items,
-         num_items);
+  int num_partitions = processor.get_table_count();
+  int num_large_partitions_ = num_partitions / LARGE_PORTION;
+  if(num_partitions % LARGE_PORTION != 0) {
+    num_large_partitions_++;
+  }
+  int num_small_partitions_ = num_partitions - num_large_partitions_;
+
+  std::cout << "-----------------[Size-awareness info]------------------" << std::endl;
+  std::cout << "number of small partitions : "<< num_small_partitions << std::endl;
+  std::cout << "number of large partitions : "<< num_large_partitions << std::endl;
+//heejin) original place of code
+/*
   for (size_t i = 0; i < num_items * 2; i++) {
     *(uint64_t*)(keys + i * key_length) = i;
     *(key_hashes + i) = hash(keys + i * key_length, key_length);
-    *(key_parts + i) = processor.get_partition_id(*(key_hashes + i));
+    *(key_parts + i) = processor.get_partition_id(*(key_hashes + i), false,\
+                       value_length, task.num_large_partitions, task.num_small_partitions, task.value_array);
     *(uint64_t*)(values + i * value_length) = i;
   }
+*/
   printf("\n");
 
   Task tasks[num_threads];
@@ -300,8 +329,21 @@ void benchmark(double zipf_theta) {
     task.key_hashes = op_key_hashes[thread_id];
     task.values = op_values[thread_id];
 
+    task.value_array = (int*)malloc(sizeof(int) * max_num_operations_per_thread);
+    task.num_small_partitions = num_small_partitions_;
+    task.num_large_partitions = num_large_partitions_;
+
     // task.success_count
   }
+
+  for (size_t i = 0; i < num_items * 2; i++) {
+    *(uint64_t*)(keys + i * key_length) = i;
+    *(key_hashes + i) = hash(keys + i * key_length, key_length);
+    *(key_parts + i) = processor.get_partition_id(*(key_hashes + i), false,\
+                       value_length, tasks[0].num_large_partitions, tasks[0].num_small_partitions, tasks[0].value_array);
+    *(uint64_t*)(values + i * value_length) = i;
+  }
+
 
   BenchmarkMode benchmark_modes[] = {
       // clang-format off

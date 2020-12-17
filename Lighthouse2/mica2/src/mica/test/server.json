@@ -45,7 +45,7 @@
     "lcores": [0, 1],
 
     "ports": [
-      {"port_id": 0, "ipv4_addr": "10.0.0.1"}
+      {"port_id": 0, "ipv4_addr": "10.20.16.110"}
       /*{"port_id": 1, "ipv4_addr": "10.0.0.2"},
       {"port_id": 2, "ipv4_addr": "10.0.0.3"},
       {"port_id": 3, "ipv4_addr": "10.0.0.4"},
