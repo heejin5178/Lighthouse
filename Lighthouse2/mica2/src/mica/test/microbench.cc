@@ -296,8 +296,8 @@ void benchmark(double zipf_theta) {
   int num_small_partitions_ = num_partitions - num_large_partitions_;
 
   std::cout << "-----------------[Size-awareness info]------------------" << std::endl;
-  std::cout << "number of small partitions : "<< num_small_partitions << std::endl;
-  std::cout << "number of large partitions : "<< num_large_partitions << std::endl;
+  std::cout << "number of small partitions : "<< num_small_partitions_ << std::endl;
+  std::cout << "number of large partitions : "<< num_large_partitions_ << std::endl;
 //heejin) original place of code
 /*
   for (size_t i = 0; i < num_items * 2; i++) {
