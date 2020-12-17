@@ -142,6 +142,7 @@ class Partitions : public ProcessorInterface<typename StaticConfig::Table> {
 
   uint16_t owner_lcore_ids_[StaticConfig::kMaxPartitionCount];
   Table* tables_[StaticConfig::kMaxPartitionCount];
+  Pool* value_pools_[StaticConfig::kMaxPartitionCount];
   Pool* pools_[StaticConfig::kMaxPartitionCount];
 
   struct PendingOwnerLCoreChange {

@@ -204,7 +204,6 @@ void benchmark(double zipf_theta) {
   size_t num_items = 16 * 1048576;
 
   auto config = ::mica::util::Config::load_file("microbench.json");
-
   uint16_t num_threads =
       static_cast<uint16_t>(config.get("processor").get("lcores").size());
   size_t num_operations = 16 * 1048576;
@@ -400,18 +399,23 @@ void benchmark(double zipf_theta) {
       bool is_get = op_r <= get_threshold;
 
       uint16_t thread_id;
-      if (is_get) {
-        if (concurrent_read == false)
-          thread_id = processor.get_owner_lcore_id(partition_id);
-        else
-          thread_id =
-              static_cast<uint16_t>(thread_rand.next_u32() % num_threads);
-      } else {
-        if (concurrent_write == false)
-          thread_id = processor.get_owner_lcore_id(partition_id);
-        else
-          thread_id =
-              static_cast<uint16_t>(thread_rand.next_u32() % num_threads);
+      if(num_threads == 1) {
+        thread_id = 0; 
+      }
+      else {
+        if (is_get) {
+          if (concurrent_read == false)
+            thread_id = processor.get_owner_lcore_id(partition_id);
+          else
+            thread_id =
+                static_cast<uint16_t>(thread_rand.next_u32() % num_threads);
+        } else {
+          if (concurrent_write == false)
+            thread_id = processor.get_owner_lcore_id(partition_id);
+          else
+            thread_id =
+                static_cast<uint16_t>(thread_rand.next_u32() % num_threads);
+        }
       }
 
       if (op_count[thread_id] < max_num_operations_per_thread) {

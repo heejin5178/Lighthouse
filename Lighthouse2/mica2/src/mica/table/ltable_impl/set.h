@@ -62,8 +62,10 @@ Result LTable<StaticConfig>::set(uint64_t key_hash, const char* key,
   }
 
   uint32_t new_item_size = static_cast<uint32_t>(
-      sizeof(Item) + ::mica::util::roundup<8>(key_length) +
-      ::mica::util::roundup<8>(value_length));
+      sizeof(Item) + ::mica::util::roundup<8>(key_length));
+  uint32_t new_value_item_size = static_cast<uint32_t>(
+      sizeof(Item) + ::mica::util::roundup<8>(value_length));
+
   uint64_t item_offset = 0;
 
   // we have to lock the pool because is_valid check must be correct in the
@@ -76,28 +78,44 @@ Result LTable<StaticConfig>::set(uint64_t key_hash, const char* key,
     item_offset = get_item_offset(located_bucket->item_vec[item_index]);
 
     size_t old_item_size;
-    Item* item =
-        reinterpret_cast<Item*>(pool_->get_item(item_offset, &old_item_size));
+    KeyItem* item =
+        reinterpret_cast<KeyItem*>(pool_->get_item(item_offset, &old_item_size));
 
     if (Specialization::is_valid(pool_, item_offset)) {
       if (old_item_size >= new_item_size) {
         stat_inc(&Stats::set_inplace);
 
-        set_item_value(item, value, (uint32_t)value_length);
+        uint64_t new_value_item_offset = value_pool_->allocate(new_value_item_size);
+        if(new_value_item_offset == Pool::kInsufficientSpace) {
+          unlock_bucket(bucket);
+          return Result::kInsufficientSpace;
+        }
+        char* temp_val = value_pool_->get_item(new_value_item_offset);
+        ValItem* new_value_item = reinterpret_cast<ValItem*>(temp_val);
+        item = set_item_value(item, new_value_item, value_length);
 
         if (std::is_base_of<::mica::pool::CircularLogTag,
                             typename Pool::Tag>::value)
           pool_->unlock();
 
         unlock_bucket(bucket);
-
+        
         return Result::kSuccess;
       }
     }
   }
 
   uint64_t new_item_offset = pool_->allocate(new_item_size);
-  if (new_item_offset == Pool::kInsufficientSpace) {
+//  printf("set key: %lu, offset : %lu\n", reinterpret_cast<uint64_t>(key), new_item_offset);
+
+  /*
+  if(strcmp(key, "139939389898816")==0) {
+    std::cout << "error key offset : " << new_item_offset << std::endl;
+  }
+  */
+  uint64_t new_value_item_offset = value_pool_->allocate(new_value_item_size);
+
+  if (new_item_offset == Pool::kInsufficientSpace || new_value_item_offset == Pool::kInsufficientSpace) {
     // no more space
     // TODO: add a statistics entry
     unlock_bucket(bucket);
@@ -106,12 +124,21 @@ Result LTable<StaticConfig>::set(uint64_t key_hash, const char* key,
   uint64_t new_tail;
   if (std::is_base_of<::mica::pool::CircularLogTag, typename Pool::Tag>::value)
     new_tail = Specialization::get_tail(pool_);
-  Item* new_item = reinterpret_cast<Item*>(pool_->get_item(new_item_offset));
+
+  //heejin) "get_pool" of this code is used to allocate new space for items 
+  KeyItem* new_item = reinterpret_cast<KeyItem*>(pool_->get_item(new_item_offset));
+  ValItem* new_value_item = reinterpret_cast<ValItem*>(value_pool_->get_item(new_value_item_offset));
 
   stat_inc(&Stats::set_new);
-
-  set_item(new_item, key_hash, key, (uint32_t)key_length, value,
-           (uint32_t)value_length);
+  ValItem* val_addr = set_value_item(new_value_item, value, (uint32_t)value_length);
+  new_item = set_key_item(new_item, key_hash, key, (uint32_t)key_length, val_addr);
+  /*
+  if(strcmp(new_item->data, value)){
+    std::cout << "error found" << std::endl;
+    exit(0);
+  }
+  */
+  //std::cout << "val addr is " << val_addr << ", new item is " << new_item << ", " << new_item->val_addr << std::endl;
 
   // unlocking is delayed until we finish writing data at the new location;
   // otherwise, the new location may be invalidated (in a very rare case)
@@ -148,7 +175,6 @@ Result LTable<StaticConfig>::set(uint64_t key_hash, const char* key,
   }
 
   stat_inc(&Stats::count);
-
   return Result::kSuccess;
 }
 }

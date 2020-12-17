@@ -141,17 +141,13 @@ int main(int argc, const char* argv[]) {
 
   ::mica::util::lcore.pin_thread(0);
 
-  printf("file read ..\n");
   auto config = ::mica::util::Config::load_file("netbench.json");
-  printf("complete file read ..\n");
 
   Alloc alloc(config.get("alloc"));
-  printf("network get.. ..\n");
+
   DatagramClientConfig::Network network(config.get("network"));
   network.start();
 
-
-  printf("before network get.. ..\n");
   Client::DirectoryClient dir_client(config.get("dir_client"));
 
   Client client(config.get("client"), &network, &dir_client);

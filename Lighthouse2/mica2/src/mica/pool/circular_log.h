@@ -81,10 +81,27 @@ class CircularLog : public PoolInterface {
   static constexpr size_t kWrapAroundSize = 2 * 1048576;
   static constexpr size_t kOffsetMask = (size_t(1) << kOffsetWidth) - 1;
 
+
+  /*
   struct Item {
     uint64_t size;
     char data[0];
   };
+  */
+  class Item {
+    public:
+      uint64_t size;
+      char data[0];
+  };
+
+  class ValItem : public Item {
+  };
+
+  class KeyItem : public Item {
+    public:
+      ValItem* val_addr = NULL;
+  };
+
 
   ::mica::util::Config config_;
   Alloc* alloc_;

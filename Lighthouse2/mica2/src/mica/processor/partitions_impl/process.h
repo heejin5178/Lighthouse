@@ -1,6 +1,7 @@
 #pragma once
 #ifndef MICA_PROCESSOR_PARTITIONS_IMPL_PROCESS_H_
 #define MICA_PROCESSOR_PARTITIONS_IMPL_PROCESS_H_
+#include <iostream>
 
 namespace mica {
 namespace processor {

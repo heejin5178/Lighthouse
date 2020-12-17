@@ -102,7 +102,7 @@ void HugeTLBFS_SHM::dump_page_info() {
 HugeTLBFS_SHM::HugeTLBFS_SHM(const ::mica::util::Config& config)
     : config_(config) {
   // Parse the configuration.
-  hugetlbfs_path_ = config.get("hugetlbfs_path").get_str("/dev/hugepages");
+  hugetlbfs_path_ = config.get("hugetlbfs_path").get_str("/mnt/huge");
   filename_prefix_ = config.get("filename_prefix").get_str("mica_shm_");
 
   num_pages_to_init_ = config.get("num_pages_to_init").get_uint64(1048576);
@@ -204,7 +204,6 @@ void HugeTLBFS_SHM::initialize() {
     make_path(file_id, path);
 
     int fd = open(path, O_RDWR, 0755);
-    printf("heejin debug) path: %s\n", path);
     if (fd == -1) {
       perror("");
       fprintf(stderr, "error: could not open %s\n", path);
