@@ -2,9 +2,6 @@
 #ifndef MICA_TABLE_LTABLE_IMPL_GET_H_
 #define MICA_TABLE_LTABLE_IMPL_GET_H_
 
-#include <iostream>
-
-
 namespace mica {
 namespace table {
 template <class StaticConfig>
@@ -14,7 +11,6 @@ Result LTable<StaticConfig>::get(uint64_t key_hash, const char* key,
                                  size_t* out_value_length,
                                  bool allow_mutation) const {
   assert(key_length <= kMaxKeyLength);
-
 
   uint32_t bucket_index = calc_bucket_index(key_hash);
   uint16_t tag = calc_tag(key_hash);
@@ -28,7 +24,7 @@ Result LTable<StaticConfig>::get(uint64_t key_hash, const char* key,
 
     const Bucket* located_bucket;
     size_t item_index = find_item_index(bucket, key_hash, tag, key, key_length,
-                                        &located_bucket, true);
+                                        &located_bucket);
     if (item_index == StaticConfig::kBucketSize) {
       if (version_start != read_version_end(bucket)) continue;
       stat_inc(&Stats::get_notfound);
@@ -40,12 +36,8 @@ Result LTable<StaticConfig>::get(uint64_t key_hash, const char* key,
 
     // we may read garbage data, but all operations relying on them are safe
     // here
-    /*
     const Item* item =
         reinterpret_cast<const Item*>(pool_->get_item(item_offset));
-    */
-    const KeyItem* item =
-        reinterpret_cast<const KeyItem*>(pool_->get_item(item_offset));
     uint32_t kv_length_vec = item->kv_length_vec;
 
     // We used to read key_length again in the old version, but we do not need
@@ -57,15 +49,14 @@ Result LTable<StaticConfig>::get(uint64_t key_hash, const char* key,
     // An invalid value means that a concurrent change is ongoing.
     // if (key_length > kMaxKeyLength) continue;
 
-    //size_t value_length = get_value_length(kv_length_vec);
-    size_t value_length = item->val_addr->kv_length_vec;
+    size_t value_length = get_value_length(kv_length_vec);
     bool invalid_value_length = false;
-    assert(value_length!=0);
+
     if (value_length <= kMaxValueLength) {
       *out_value_length = std::min(value_length, in_value_length);
       partial_value = (value_length != *out_value_length);
       ::mica::util::memcpy<8>(out_value,
-                              item->val_addr->data + ::mica::util::roundup<8>(item->val_addr->kv_length_vec),
+                              item->data + ::mica::util::roundup<8>(key_length),
                               *out_value_length);
     } else {
       // An invalid value means that a concurrent change is ongoing.
@@ -106,7 +97,7 @@ Result LTable<StaticConfig>::get(uint64_t key_hash, const char* key,
     if (allow_mutation)
       const_cast<LTable<StaticConfig>*>(this)->move_to_head(
           const_cast<Bucket*>(bucket), const_cast<Bucket*>(located_bucket),
-          reinterpret_cast<const Item*>(item), key_length, value_length, item_index, item_vec, item_offset);
+          item, key_length, value_length, item_index, item_vec, item_offset);
 
     break;
   }

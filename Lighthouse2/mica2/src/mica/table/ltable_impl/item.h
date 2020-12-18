@@ -1,21 +1,17 @@
 #pragma once
 #ifndef MICA_TABLE_LTABLE_IMPL_ITEM_H_
 #define MICA_TABLE_LTABLE_IMPL_ITEM_H_
-#include <iostream>
 
 namespace mica {
 namespace table {
-
 template <class StaticConfig>
 uint32_t LTable<StaticConfig>::get_key_length(uint32_t kv_length_vec) {
-  //return kv_length_vec >> 24;
-  return kv_length_vec;
+  return kv_length_vec >> 24;
 }
 
 template <class StaticConfig>
 uint32_t LTable<StaticConfig>::get_value_length(uint32_t kv_length_vec) {
-  //return kv_length_vec & Item::kValueMask;
-  return kv_length_vec;
+  return kv_length_vec & Item::kValueMask;
 }
 
 template <class StaticConfig>
@@ -37,7 +33,6 @@ template <class StaticConfig>
 void LTable<StaticConfig>::set_item(Item* item, uint64_t key_hash,
                                     const char* key, uint32_t key_length,
                                     const char* value, uint32_t value_length) {
-  assert(0); // this func won't be used
   assert(key_length <= Item::kKeyMask);
   assert(value_length <= Item::kValueMask);
 
@@ -49,44 +44,14 @@ void LTable<StaticConfig>::set_item(Item* item, uint64_t key_hash,
 }
 
 template <class StaticConfig>
-struct LTable<StaticConfig>::KeyItem* LTable<StaticConfig>::set_key_item(KeyItem* item, uint64_t key_hash,
-                                    const char* key, uint32_t key_length, ValItem* val_addr) {
-  assert(key_length <= Item::kKeyMask);
-
-  item->kv_length_vec = key_length;
-  item->key_hash = key_hash;
-  ::mica::util::memcpy<8>(item->data, key, key_length);
-  item->val_addr = val_addr;
-  //std::cout << "key is " << reinterpret_cast<const uint64_t>(key) <<std::endl;
-  //std::cout << "in func: "<< item << ", " << item->val_addr << ", " << val_addr << std::endl;
-  return item;
-}
-
-
-template <class StaticConfig>
-struct LTable<StaticConfig>::ValItem* LTable<StaticConfig>::set_value_item(ValItem* item,
-                                    const char* value, uint32_t value_length) {
-  assert(value_length <= Item::kValueMask);
-
-  item->kv_length_vec = value_length;
-  //std::cout << "value is " << reinterpret_cast<const uint64_t>(value) <<std::endl;
-  ::mica::util::memcpy<8>(item->data, value, value_length);
-  return item;
-}
-
-template <class StaticConfig>
-struct LTable<StaticConfig>::KeyItem* LTable<StaticConfig>::set_item_value(KeyItem* item, ValItem* value,
+void LTable<StaticConfig>::set_item_value(Item* item, const char* value,
                                           uint32_t value_length) {
   assert(value_length <= Item::kValueMask);
 
-  //uint32_t key_length = get_key_length(item->kv_length_vec);
-  //item->kv_length_vec = make_kv_length_vec(key_length, value_length);
-  //TODO) dealloc original value addr
-  item->val_addr = value;
-  item->val_addr->kv_length_vec = value_length;
-
-  ::mica::util::memcpy<8>(item->val_addr->data, value, value_length);
-  return item;
+  uint32_t key_length = get_key_length(item->kv_length_vec);
+  item->kv_length_vec = make_kv_length_vec(key_length, value_length);
+  ::mica::util::memcpy<8>(item->data + ::mica::util::roundup<8>(key_length),
+                          value, value_length);
 }
 
 template <class StaticConfig>

@@ -1,7 +1,6 @@
 #pragma once
 #ifndef MICA_PROCESSOR_PARTITIONS_IMPL_PROCESS_H_
 #define MICA_PROCESSOR_PARTITIONS_IMPL_PROCESS_H_
-#include <iostream>
 
 namespace mica {
 namespace processor {
@@ -65,9 +64,7 @@ void Partitions<StaticConfig>::process(RequestAccessor& ra) {
 
     if (index < count) {
       auto key_hash = ra.get_key_hash(index);
-      auto partition_id = get_partition_id(key_hash, false, ra.get_value_length(index), 
-                          ra.get_num_large_partitions(), ra.get_num_small_partitions(), ra.get_value_array());
-
+      auto partition_id = get_partition_id(key_hash);
       partition_ids[index & pipeline_size_mask] = partition_id;
       if (StaticConfig::kPrefetchTable) {
         if (StaticConfig::kVerbose)

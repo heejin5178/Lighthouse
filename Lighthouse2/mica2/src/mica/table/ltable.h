@@ -84,7 +84,7 @@ class LTable : public TableInterface {
   static constexpr size_t kMaxValueLength = 1048575;
 
   // ltable_impl/init.h
-  LTable(const ::mica::util::Config& config, Alloc* alloc, Pool* pool, Pool* val_pool);
+  LTable(const ::mica::util::Config& config, Alloc* alloc, Pool* pool);
   ~LTable();
 
   void reset();
@@ -119,29 +119,6 @@ class LTable : public TableInterface {
 
  private:
   typedef LTablePoolSpecialization<typename Pool::Tag> Specialization;
-
-  struct ValItem {
-    uint32_t kv_length_vec;  // key_length: 8, value_length: 24; kv_length_vec
-                             // == 0: empty item
-
-    // the rest is meaningful only when kv_length_vec != 0
-    // uint32_t expire_time;
-    //uint32_t reserved0;
-    char data[0];
-  };
-
-  struct KeyItem {
-    uint32_t kv_length_vec;  // key_length: 8, value_length: 24; kv_length_vec
-                             // == 0: empty item
-
-    // the rest is meaningful only when kv_length_vec != 0
-    // uint32_t expire_time;
-    //uint32_t reserved0;
-    uint64_t key_hash;
-    char data[0];
-    struct ValItem* val_addr = NULL;
-  };
-
 
   struct Item {
     uint32_t kv_length_vec;  // key_length: 8, value_length: 24; kv_length_vec
@@ -214,10 +191,10 @@ class LTable : public TableInterface {
   size_t get_empty_or_oldest(Bucket* bucket, Bucket** located_bucket);
   size_t find_item_index(const Bucket* bucket, uint64_t key_hash, uint16_t tag,
                          const char* key, size_t key_length,
-                         const Bucket** located_bucket, bool debug=false) const;
+                         const Bucket** located_bucket) const;
   size_t find_item_index(Bucket* bucket, uint64_t key_hash, uint16_t tag,
                          const char* key, size_t key_length,
-                         Bucket** located_bucket, bool debug=false);
+                         Bucket** located_bucket);
   size_t find_same_tag(const Bucket* bucket, uint16_t tag,
                        const Bucket** located_bucket) const;
   size_t find_same_tag(Bucket* bucket, uint16_t tag, Bucket** located_bucket);
@@ -238,14 +215,7 @@ class LTable : public TableInterface {
   static void set_item(Item* item, uint64_t key_hash, const char* key,
                        uint32_t key_length, const char* value,
                        uint32_t value_length);
-
-  static KeyItem* set_key_item(KeyItem* item, uint64_t key_hash, const char* key,
-                       uint32_t key_length, ValItem* val_addr);
-
-  static struct ValItem* set_value_item(ValItem* item, const char* value,
-                       uint32_t value_length);
-
-  static struct KeyItem* set_item_value(KeyItem* item, ValItem* value,
+  static void set_item_value(Item* item, const char* value,
                              uint32_t value_length);
   static bool compare_keys(const char* key1, size_t key1_len, const char* key2,
                            size_t key2_len);
@@ -266,7 +236,6 @@ class LTable : public TableInterface {
   ::mica::util::Config config_;
   Alloc* alloc_;
   Pool* pool_;
-  Pool* value_pool_;
 
   Bucket* buckets_;
   Bucket* extra_buckets_;  // = (buckets + num_buckets); extra_buckets[0] is

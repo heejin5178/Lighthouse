@@ -33,10 +33,6 @@ class RandomAccessRequestAccessorInterface : public RequestAccessorInterface {
   void set_result(size_t index, Result result);
 
   void retire(size_t index);
-
-  int* get_value_array();
-  int get_num_large_partitions(void);
-  int get_num_small_partitions(void);
 };
 
 class RequestArrayAccessor : public RandomAccessRequestAccessorInterface {
@@ -45,9 +41,7 @@ class RequestArrayAccessor : public RandomAccessRequestAccessorInterface {
                        const uint64_t* key_hashes, const char** keys,
                        const size_t* key_lengths, const char** values,
                        const size_t* value_lengths, Result** out_results,
-                       char** out_values, size_t** out_value_lengths, 
-                       int num_small_partitions, int num_large_partitions,
-                       int* value_array)
+                       char** out_values, size_t** out_value_lengths)
       : count_(count),
         req_types_(req_types),
         key_hashes_(key_hashes),
@@ -57,11 +51,7 @@ class RequestArrayAccessor : public RandomAccessRequestAccessorInterface {
         value_lengths_(value_lengths),
         out_results_(out_results),
         out_values_(out_values),
-        out_value_lengths_(out_value_lengths),
-        num_large_partitions_(num_large_partitions),
-        num_small_partitions_(num_small_partitions),
-        value_array_(value_array) {
-
+        out_value_lengths_(out_value_lengths) {
     assert(req_types_);
     assert(key_hashes_);
     assert(keys_);
@@ -135,17 +125,6 @@ class RequestArrayAccessor : public RandomAccessRequestAccessorInterface {
     (void)index;
   }
 
-  int get_num_small_partitions(void) {
-    return num_small_partitions_; 
-  }
-
-  int get_num_large_partitions(void) {
-    return num_large_partitions_;
-  }
-
-  int* get_value_array(void) {
-    return value_array_;
-  }
  private:
   size_t count_;
   const Operation* req_types_;
@@ -157,9 +136,6 @@ class RequestArrayAccessor : public RandomAccessRequestAccessorInterface {
   Result** out_results_;
   char** out_values_;
   size_t** out_value_lengths_;
-  int num_small_partitions_;
-  int num_large_partitions_;
-  int* value_array_;
 };
 }
 }

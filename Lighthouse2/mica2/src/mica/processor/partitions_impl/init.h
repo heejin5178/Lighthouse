@@ -98,8 +98,7 @@ void Partitions<StaticConfig>::initialize() {
 
     owner_lcore_ids_[i] = current_lcore_id;
     pools_[i] = new Pool(pool_config, alloc_);
-    value_pools_[i] = new Pool(pool_config, alloc_);
-    tables_[i] = new Table(table_config, alloc_, pools_[i], value_pools_[i]);
+    tables_[i] = new Table(table_config, alloc_, pools_[i]);
 
     if (StaticConfig::kVerbose) {
       printf("= Partition %zu at lcore %hu\n", i, current_lcore_id);

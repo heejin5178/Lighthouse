@@ -6,8 +6,6 @@ PROJECT(MICA)
 SET(CMAKE_CXX_COMPILER g++-5)
 SET(CMAKE_C_LINK_EXECUTABLE g++-5)
 
-#heejin added) ignore warning message
-SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall -Wextra")
 
 
 OPTION(DEBUG "Enable debugging" OFF)
@@ -94,7 +92,7 @@ IF(DPDK)
   link_directories(${LINK_DIRECTORIES} ${RTE_SDK}/build/lib)
   set(LIBRARIES ${LIBRARIES} -Wl,--whole-archive)
   set(LIBRARIES ${LIBRARIES} rte_kvargs rte_mbuf rte_ethdev rte_mempool rte_ring rte_eal)
-  set(LIBRARIES ${LIBRARIES} rte_pmd_e1000 rte_pmd_ixgbe rte_pmd_ring)
+  set(LIBRARIES ${LIBRARIES} rte_pmd_i40e rte_pmd_ixgbe rte_pmd_ring)
   set(LIBRARIES ${LIBRARIES} -Wl,--no-whole-archive)
   set(LIBRARIES ${LIBRARIES} rt dl)
 
@@ -138,39 +136,39 @@ SET(LIBRARIES ${LIBRARIES} curl)
 
 IF(LTO)
 
-  #  #ADD_EXECUTABLE(test_table src/mica/test/test_table.cc ${SOURCES})
-  #  #TARGET_LINK_LIBRARIES(test_table ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_processor src/mica/test/test_processor.cc ${SOURCES})
-  #  TARGET_LINK_LIBRARIES(test_processor ${LIBRARIES})
-  #
-  #  #ADD_EXECUTABLE(test_load src/mica/test/test_load.cc ${SOURCES})
-  #  #TARGET_LINK_LIBRARIES(test_load ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_zipf src/mica/test/test_zipf.cc ${SOURCES})
-  #  TARGET_LINK_LIBRARIES(test_zipf ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_prefetch src/mica/test/test_prefetch.cc ${SOURCES})
-  #  TARGET_LINK_LIBRARIES(test_prefetch ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_rand src/mica/test/test_rand.cc ${SOURCES})
-  #  TARGET_LINK_LIBRARIES(test_rand ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_hash src/mica/test/test_hash.cc ${SOURCES})
-  #  TARGET_LINK_LIBRARIES(test_hash ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_atomics src/mica/test/test_atomics.cc ${SOURCES})
-  #  TARGET_LINK_LIBRARIES(test_atomics ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_tsc_sync src/mica/test/test_tsc_sync.cc ${SOURCES})
-  #  TARGET_LINK_LIBRARIES(test_tsc_sync ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(microbench src/mica/test/microbench.cc ${SOURCES})
-  #  TARGET_LINK_LIBRARIES(microbench ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(cdf src/mica/test/cdf.cc ${SOURCES})
-  #  TARGET_LINK_LIBRARIES(cdf ${LIBRARIES})
-  #
+  ADD_EXECUTABLE(test_table src/mica/test/test_table.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(test_table ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_processor src/mica/test/test_processor.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(test_processor ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_load src/mica/test/test_load.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(test_load ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_zipf src/mica/test/test_zipf.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(test_zipf ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_prefetch src/mica/test/test_prefetch.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(test_prefetch ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_rand src/mica/test/test_rand.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(test_rand ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_hash src/mica/test/test_hash.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(test_hash ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_atomics src/mica/test/test_atomics.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(test_atomics ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_tsc_sync src/mica/test/test_tsc_sync.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(test_tsc_sync ${LIBRARIES})
+
+  ADD_EXECUTABLE(microbench src/mica/test/microbench.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(microbench ${LIBRARIES})
+
+  ADD_EXECUTABLE(cdf src/mica/test/cdf.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(cdf ${LIBRARIES})
+
   IF(DPDK)
 
     ADD_EXECUTABLE(server src/mica/test/server.cc ${SOURCES})
@@ -192,39 +190,35 @@ ELSE(LTO)
 
   ADD_LIBRARY(common ${SOURCES})
 
-  #  ADD_EXECUTABLE(test_table src/mica/test/test_table.cc)
-  #  TARGET_LINK_LIBRARIES(test_table common ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_processor src/mica/test/test_processor.cc)
-  #  TARGET_LINK_LIBRARIES(test_processor common ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_load src/mica/test/test_load.cc)
-  #  TARGET_LINK_LIBRARIES(test_load common ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_zipf src/mica/test/test_zipf.cc)
-  #  TARGET_LINK_LIBRARIES(test_zipf common ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_prefetch src/mica/test/test_prefetch.cc)
-  #  TARGET_LINK_LIBRARIES(test_prefetch common ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_rand src/mica/test/test_rand.cc ${SOURCES})
-  #  TARGET_LINK_LIBRARIES(test_rand ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_hash src/mica/test/test_hash.cc ${SOURCES})
-  #  TARGET_LINK_LIBRARIES(test_hash ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_atomics src/mica/test/test_atomics.cc ${SOURCES})
-  #  TARGET_LINK_LIBRARIES(test_atomics ${LIBRARIES})
-  #
-  #  ADD_EXECUTABLE(test_tsc_sync src/mica/test/test_tsc_sync.cc ${SOURCES})
-  #  TARGET_LINK_LIBRARIES(test_tsc_sync ${LIBRARIES})
+  ADD_EXECUTABLE(test_table src/mica/test/test_table.cc)
+  TARGET_LINK_LIBRARIES(test_table common ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_processor src/mica/test/test_processor.cc)
+  TARGET_LINK_LIBRARIES(test_processor common ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_load src/mica/test/test_load.cc)
+  TARGET_LINK_LIBRARIES(test_load common ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_zipf src/mica/test/test_zipf.cc)
+  TARGET_LINK_LIBRARIES(test_zipf common ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_prefetch src/mica/test/test_prefetch.cc)
+  TARGET_LINK_LIBRARIES(test_prefetch common ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_rand src/mica/test/test_rand.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(test_rand ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_hash src/mica/test/test_hash.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(test_hash ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_atomics src/mica/test/test_atomics.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(test_atomics ${LIBRARIES})
+
+  ADD_EXECUTABLE(test_tsc_sync src/mica/test/test_tsc_sync.cc ${SOURCES})
+  TARGET_LINK_LIBRARIES(test_tsc_sync ${LIBRARIES})
 
   ADD_EXECUTABLE(microbench src/mica/test/microbench.cc)
   TARGET_LINK_LIBRARIES(microbench common ${LIBRARIES})
-
-  ADD_EXECUTABLE(microbench_fb src/mica/test/microbench_facebook.cc)
-  TARGET_LINK_LIBRARIES(microbench_fb common ${LIBRARIES})
-
 
   ADD_EXECUTABLE(cdf src/mica/test/cdf.cc)
   TARGET_LINK_LIBRARIES(cdf common ${LIBRARIES})

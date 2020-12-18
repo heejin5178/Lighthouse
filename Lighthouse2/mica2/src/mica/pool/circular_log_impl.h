@@ -141,14 +141,12 @@ char* CircularLog<StaticConfig>::get_item(Offset offset) {
 
 template <class StaticConfig>
 const char* CircularLog<StaticConfig>::get_item(Offset offset) const {
-  assert(0);
   const Item* item = reinterpret_cast<const Item*>(data_ + (offset & mask_));
   return item->data;
 }
 
 template <class StaticConfig>
 char* CircularLog<StaticConfig>::get_item(Offset offset, std::size_t* out_len) {
-  assert(0);
   Item* item = reinterpret_cast<Item*>(data_ + (offset & mask_));
   *out_len = item->size;
   return item->data;
@@ -157,7 +155,6 @@ char* CircularLog<StaticConfig>::get_item(Offset offset, std::size_t* out_len) {
 template <class StaticConfig>
 const char* CircularLog<StaticConfig>::get_item(Offset offset,
                                                 std::size_t* out_len) const {
-  assert(0);
   const Item* item = reinterpret_cast<const Item*>(data_ + (offset & mask_));
   *out_len = item->size;
   return item->data;

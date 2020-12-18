@@ -152,10 +152,6 @@ class DatagramServer {
     void set_result(size_t index, Result result);
     void retire(size_t index);
 
-    int* get_value_array(void);
-    int get_num_large_partitions(void);
-    int get_num_small_partitions(void);
-
    private:
     static constexpr size_t kMaxParsedRequestCount =
         StaticConfig::kMaxParsedRequestCount;
@@ -181,9 +177,6 @@ class DatagramServer {
       uint8_t key_length;
       uint8_t operation;
       uint8_t last_in_packet;
-      int num_small_partitions_;
-      int num_large_partitions_;
-      int* value_array_;
     };
 
     struct PendingResponseBatch {

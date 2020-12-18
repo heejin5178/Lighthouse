@@ -565,27 +565,6 @@ void DatagramServer<StaticConfig>::RequestAccessor::retire(size_t index) {
   next_index_to_retire_++;
 }
 
-//heejin TODO) optimization necessary
-//every packet does not have to store value of num large partition and num small partition
-template <class StaticConfig>
-int* DatagramServer<StaticConfig>::RequestAccessor::get_value_array(void) {
-  return requests_[0].value_array_;
-}
-
-template <class StaticConfig>
-int DatagramServer<StaticConfig>::RequestAccessor::get_num_large_partitions(void) {
-  return requests_[0].num_small_partitions_;
-}
-
-
-template <class StaticConfig>
-int DatagramServer<StaticConfig>::RequestAccessor::get_num_small_partitions(void) {
-  return requests_[0].num_large_partitions_;
-
-}
-
-
-
 template <class StaticConfig>
 bool DatagramServer<StaticConfig>::RequestAccessor::parse_request_batch() {
   while (next_packet_index_to_parse_ < packet_count_) {
@@ -630,11 +609,6 @@ bool DatagramServer<StaticConfig>::RequestAccessor::parse_request_batch() {
       pr.value_length = static_cast<uint32_t>(r.get_value_length());
       pr.opaque = r.get_opaque();
       pr.last_in_packet = 0;
-
-      //heejin added additional parameter
-      pr.num_small_partitions_ = r.get_num_small_partitions();
-      pr.num_large_partitions_ = r.get_num_large_partitions();
-      pr.value_array_ = r.get_value_array();
 
       next_index_to_prepare_++;
     }

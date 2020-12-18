@@ -39,11 +39,6 @@ struct RequestHeader {
   uint32_t reserved1;
   // 24
   // Key-value data
-
-  //heejin added
-  int* value_array_;
-  int num_small_partitions_;
-  int num_large_partitions_;
 };
 
 // A helper class that reads the information from a buffer.
@@ -202,17 +197,6 @@ class RequestBatchReader {
     return h_->kv_length_vec & ((1 << 24) - 1);
   }
 
-  int* get_value_array(){
-    return h_->value_array_;
-  }
-
-  int get_num_small_partitions() {
-    return h_->num_small_partitions_;
-  }
-
-  int get_num_large_partitions() {
-    return h_->num_large_partitions_;
-  }
  private:
   const PacketBuffer* buf_;
   const RequestHeader* h_;

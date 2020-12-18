@@ -4,11 +4,6 @@
 
 namespace mica {
 namespace processor {
-
-//heejin added custom variable
-static size_t value_length_idx = 0;
-
-
 template <class StaticConfig>
 size_t Partitions<StaticConfig>::get_table_count() const {
   return partition_count_;
@@ -177,25 +172,8 @@ void Partitions<StaticConfig>::rebalance_load() {
 }
 
 template <class StaticConfig>
-uint16_t Partitions<StaticConfig>::get_partition_id(uint64_t key_hash, bool is_get, size_t item_length, int num_large_partitions, int num_small_partitions, int* value_lengths) const {
-//  return static_cast<uint16_t>((key_hash >> 48) % partition_count_);
-  uint16_t partition_id;
-
-  double cdf = CDF_update(value_lengths, value_length_idx, (int)item_length);
-#ifdef DEBUG
-  printf("[Get partition id] large partition : %d, small partition : %d\n", num_large_partitions, num_small_partitions);
-#endif
-
-    if (is_large(cdf)) { // [CHECK]
-  //partition_id = large_core[];
-      partition_id = (uint16_t)(key_hash >> 48) & (uint16_t)(num_large_partitions - 1) + num_small_partitions;
-    }
-    else {
-      partition_id = (uint16_t)(key_hash >> 48) & (uint16_t)(num_small_partitions-1);
-   }
-    value_length_idx++; 
-    //printf("%d th partition_id is %u\n", value_length_idx, partition_id);
-    return partition_id;
+uint16_t Partitions<StaticConfig>::get_partition_id(uint64_t key_hash) const {
+  return static_cast<uint16_t>((key_hash >> 48) % partition_count_);
 }
 
 template <class StaticConfig>

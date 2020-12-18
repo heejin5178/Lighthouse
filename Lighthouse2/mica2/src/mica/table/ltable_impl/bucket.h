@@ -227,7 +227,7 @@ size_t LTable<StaticConfig>::get_empty_or_oldest(Bucket* bucket,
 template <class StaticConfig>
 size_t LTable<StaticConfig>::find_item_index(
     const Bucket* bucket, uint64_t key_hash, uint16_t tag, const char* key,
-    size_t key_length, const Bucket** located_bucket, bool debug) const {
+    size_t key_length, const Bucket** located_bucket) const {
   const Bucket* current_bucket = bucket;
 
   while (true) {
@@ -237,35 +237,25 @@ size_t LTable<StaticConfig>::find_item_index(
       if (get_tag(item_vec) != tag) continue;
 
       // we may read garbage values, which do not cause any fatal issue
-      /*
       const Item* item = reinterpret_cast<const Item*>(
           pool_->get_item(get_item_offset(item_vec)));
-      */
-      const KeyItem* item = reinterpret_cast<const KeyItem*>(
-          pool_->get_item(get_item_offset(item_vec)));
 
-      if (item->key_hash != key_hash){
-        continue;
-      }
-      /*
-        if(debug) {
-          std::cout << "get offset: "<< get_item_offset(item_vec) << std::endl;
-           printf("item->key_length %u\n", get_key_length(item->kv_length_vec));
-           printf("key_length %u\n", key_length);
+      // printf("item->key_hash %lu\n", item->key_hash);
+      // printf("key_hash %lu\n", key_hash);
 
-           printf("item->data %lu\n",
-                  *reinterpret_cast<const uint64_t*>(item->data));
-           printf("key %lu\n", reinterpret_cast<const uint64_t>(key));
-        
-        }
-      */
+      if (item->key_hash != key_hash) continue;
+
+      // printf("item->key_length %u\n", get_key_length(item->kv_length_vec));
+      // printf("key_length %u\n", key_length);
+
+      // printf("item->data %lu\n",
+      //        *reinterpret_cast<const uint64_t*>(item->data));
+      // printf("key %lu\n", *reinterpret_cast<const uint64_t*>(key));
+
       // a key comparison reads up to min(source key length and destination
       // key length), which is always safe to do
-      /*
       if (!compare_keys(item->data, get_key_length(item->kv_length_vec), key,
                         key_length))
-                        */
-      if (strcmp(item->data, key) != 0)
         continue;
 
       // we skip any validity check because it will be done by callers who are
@@ -291,10 +281,10 @@ template <class StaticConfig>
 size_t LTable<StaticConfig>::find_item_index(Bucket* bucket, uint64_t key_hash,
                                              uint16_t tag, const char* key,
                                              size_t key_length,
-                                             Bucket** located_bucket, bool debug) {
+                                             Bucket** located_bucket) {
   return find_item_index(const_cast<const Bucket*>(bucket), key_hash, tag, key,
                          key_length,
-                         const_cast<const Bucket**>(located_bucket), debug);
+                         const_cast<const Bucket**>(located_bucket));
 }
 
 template <class StaticConfig>

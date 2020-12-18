@@ -2,20 +2,12 @@
 #ifndef MICA_TABLE_LTABLE_IMPL_INIT_H_
 #define MICA_TABLE_LTABLE_IMPL_INIT_H_
 
-
-//for debugging
-void helper_func() {
-  //printf("helper func!\n");
-}
-
 namespace mica {
 namespace table {
 template <class StaticConfig>
 LTable<StaticConfig>::LTable(const ::mica::util::Config& config, Alloc* alloc,
-                             Pool* pool, Pool* val_pool)
-    : config_(config), alloc_(alloc), pool_(pool), value_pool_(val_pool) {
-
-      helper_func();
+                             Pool* pool)
+    : config_(config), alloc_(alloc), pool_(pool) {
   size_t item_count = config.get("item_count").get_uint64();
   // Compensate the load factor.
   item_count = item_count * 11 / 10;

@@ -13,8 +13,6 @@
 #include "mica/util/lcore.h"
 #include "mica/util/tsc.h"
 #include "mica/util/queue.h"
-#include "cdf_custom.h"
-
 
 // Configuration file entries for Partitions:
 //
@@ -113,7 +111,7 @@ class Partitions : public ProcessorInterface<typename StaticConfig::Table> {
 
   void rebalance_load();
 
-  uint16_t get_partition_id(uint64_t key_hash, bool is_get, size_t item_length, int num_large_partitions, int num_small_partitions, int* value_lengths) const;
+  uint16_t get_partition_id(uint64_t key_hash) const;
 
   void reset_load_stats();
   uint32_t get_request_count(uint16_t lcore_id, uint16_t index) const;
@@ -145,7 +143,6 @@ class Partitions : public ProcessorInterface<typename StaticConfig::Table> {
   uint16_t owner_lcore_ids_[StaticConfig::kMaxPartitionCount];
   Table* tables_[StaticConfig::kMaxPartitionCount];
   Pool* pools_[StaticConfig::kMaxPartitionCount];
-  Pool* value_pools_[StaticConfig::kMaxPartitionCount];
 
   struct PendingOwnerLCoreChange {
     uint16_t partition_id;

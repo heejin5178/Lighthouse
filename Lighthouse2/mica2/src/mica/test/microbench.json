@@ -17,7 +17,7 @@
     "total_size": 922746880,
     "total_item_count": 31457280,
 
-    "concurrent_read": true,
+    "concurrent_read": false,
     /*"concurrent_read": true,*/
     "concurrent_write": false,
     /*"concurrent_write": true,*/

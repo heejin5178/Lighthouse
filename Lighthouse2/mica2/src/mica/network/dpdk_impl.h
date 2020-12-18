@@ -93,7 +93,6 @@ DPDK<StaticConfig>::DPDK(const ::mica::util::Config& config)
           sleep(1);
           continue;
         }
-	/*
         if (link.link_speed / 1000 < StaticConfig::kMinLinkSpeed) {
           printf("warning: port %" PRIu16 ": low speed (current: %" PRIu32
                  " Gbps, minimum: %" PRIu32 " Gbps); retrying...\n",
@@ -101,7 +100,6 @@ DPDK<StaticConfig>::DPDK(const ::mica::util::Config& config)
           sleep(1);
           continue;
         }
-	*/
         break;
       }
 
@@ -448,7 +446,6 @@ void DPDK<StaticConfig>::start() {
         sleep(1);
         continue;
       }
-      /*
       if (link.link_speed / 1000 < StaticConfig::kMinLinkSpeed) {
         printf("warning: port %" PRIu16 ": low speed (current: %" PRIu32
                " Gbps, minimum: %" PRIu32 " Gbps); retrying...\n",
@@ -456,7 +453,6 @@ void DPDK<StaticConfig>::start() {
         sleep(1);
         continue;
       }
-      */
       break;
     }
 

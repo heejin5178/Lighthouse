@@ -9,7 +9,6 @@
 #include "mica/util/hash.h"
 #include "mica/util/zipf.h"
 #include "mica/util/tsc.h"
-#define LARGE_PORTION 16 
 
 struct LTableConfig : public ::mica::table::BasicLossyLTableConfig {
   // struct LTableConfig : public ::mica::table::BasicLosslessLTableConfig {
@@ -65,10 +64,6 @@ struct Task {
 
   uint64_t success_count;
   uint64_t total_operation_count;
-
-  int* value_array;
-  int num_small_partitions;
-  int num_large_partitions;
   // size_t num_existing_items;
   // size_t* existing_items;
 } __attribute__((aligned(128)));  // To prevent false sharing caused by
@@ -114,10 +109,6 @@ class RequestAccessor : public ::mica::processor::RequestAccessorInterface {
     return task_.key_length;
   }
 
-  int* get_value_array(void) {
-    return task_.value_array;
-  }
-
   const char* get_value(size_t index) {
     assert(index < task_.count);
     return task_.values + index * task_.value_length;
@@ -126,7 +117,7 @@ class RequestAccessor : public ::mica::processor::RequestAccessorInterface {
   size_t get_value_length(size_t index) {
     assert(index < task_.count);
     (void)index;
-    return task_.value_length; //heejin
+    return task_.value_length;
   }
 
   char* get_out_value(size_t index) {
@@ -154,14 +145,6 @@ class RequestAccessor : public ::mica::processor::RequestAccessorInterface {
   void retire(size_t index) {
     assert(index < task_.count);
     (void)index;
-  }
-
-  int get_num_small_partitions(void) {
-    return task_.num_small_partitions;
-  }
-
-  int get_num_large_partitions(void) {
-    return task_.num_large_partitions;
   }
 
  private:
@@ -218,12 +201,13 @@ void benchmark(double zipf_theta) {
 
   printf("zipf_theta = %lf\n", zipf_theta);
 
-  size_t num_items = 16 * 1048576 / 16;
+  size_t num_items = 16 * 1048576;
 
   auto config = ::mica::util::Config::load_file("microbench.json");
+
   uint16_t num_threads =
       static_cast<uint16_t>(config.get("processor").get("lcores").size());
-  size_t num_operations = 16 * 1048576 / 16;
+  size_t num_operations = 16 * 1048576;
   size_t max_num_operations_per_thread = num_operations;
 
   size_t key_length = ::mica::util::roundup<8>(sizeof(uint64_t));
@@ -288,26 +272,14 @@ void benchmark(double zipf_theta) {
   double set_1_ops = -1.;
   double get_1_ops = -1.;
 
-  int num_partitions = processor.get_table_count();
-  int num_large_partitions_ = num_partitions / LARGE_PORTION;
-  if(num_partitions % LARGE_PORTION != 0) {
-    num_large_partitions_++;
-  }
-  int num_small_partitions_ = num_partitions - num_large_partitions_;
-
-  std::cout << "-----------------[Size-awareness info]------------------" << std::endl;
-  std::cout << "number of small partitions : "<< num_small_partitions_ << std::endl;
-  std::cout << "number of large partitions : "<< num_large_partitions_ << std::endl;
-//heejin) original place of code
-/*
+  printf("generating %zu items (including %zu miss items)\n", num_items,
+         num_items);
   for (size_t i = 0; i < num_items * 2; i++) {
     *(uint64_t*)(keys + i * key_length) = i;
     *(key_hashes + i) = hash(keys + i * key_length, key_length);
-    *(key_parts + i) = processor.get_partition_id(*(key_hashes + i), false,\
-                       value_length, task.num_large_partitions, task.num_small_partitions, task.value_array);
+    *(key_parts + i) = processor.get_partition_id(*(key_hashes + i));
     *(uint64_t*)(values + i * value_length) = i;
   }
-*/
   printf("\n");
 
   Task tasks[num_threads];
@@ -329,21 +301,8 @@ void benchmark(double zipf_theta) {
     task.key_hashes = op_key_hashes[thread_id];
     task.values = op_values[thread_id];
 
-    task.value_array = (int*)malloc(sizeof(int) * max_num_operations_per_thread);
-    task.num_small_partitions = num_small_partitions_;
-    task.num_large_partitions = num_large_partitions_;
-
     // task.success_count
   }
-
-  for (size_t i = 0; i < num_items * 2; i++) {
-    *(uint64_t*)(keys + i * key_length) = i;
-    *(key_hashes + i) = hash(keys + i * key_length, key_length);
-    *(key_parts + i) = processor.get_partition_id(*(key_hashes + i), false,\
-                       value_length, tasks[0].num_large_partitions, tasks[0].num_small_partitions, tasks[0].value_array);
-    *(uint64_t*)(values + i * value_length) = i;
-  }
-
 
   BenchmarkMode benchmark_modes[] = {
       // clang-format off
@@ -441,23 +400,18 @@ void benchmark(double zipf_theta) {
       bool is_get = op_r <= get_threshold;
 
       uint16_t thread_id;
-      if(num_threads == 1) {
-        thread_id = 0; 
-      }
-      else {
-        if (is_get) {
-          if (concurrent_read == false)
-            thread_id = processor.get_owner_lcore_id(partition_id);
-          else
-            thread_id =
-                static_cast<uint16_t>(thread_rand.next_u32() % num_threads);
-        } else {
-          if (concurrent_write == false)
-            thread_id = processor.get_owner_lcore_id(partition_id);
-          else
-            thread_id =
-                static_cast<uint16_t>(thread_rand.next_u32() % num_threads);
-        }
+      if (is_get) {
+        if (concurrent_read == false)
+          thread_id = processor.get_owner_lcore_id(partition_id);
+        else
+          thread_id =
+              static_cast<uint16_t>(thread_rand.next_u32() % num_threads);
+      } else {
+        if (concurrent_write == false)
+          thread_id = processor.get_owner_lcore_id(partition_id);
+        else
+          thread_id =
+              static_cast<uint16_t>(thread_rand.next_u32() % num_threads);
       }
 
       if (op_count[thread_id] < max_num_operations_per_thread) {
