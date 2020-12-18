@@ -60,7 +60,8 @@ class RequestArrayAccessor : public RandomAccessRequestAccessorInterface {
         out_value_lengths_(out_value_lengths),
         num_large_partitions_(num_large_partitions),
         num_small_partitions_(num_small_partitions),
-        value_array_(value_array){
+        value_array_(value_array) {
+
     assert(req_types_);
     assert(key_hashes_);
     assert(keys_);

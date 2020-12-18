@@ -9,6 +9,9 @@
 #include "mica/util/hash.h"
 #include "mica/util/zipf.h"
 #include "mica/util/tsc.h"
+#include <time.h>
+#include <iostream>
+
 #define LARGE_PORTION 16 
 
 struct LTableConfig : public ::mica::table::BasicLossyLTableConfig {
@@ -69,6 +72,7 @@ struct Task {
   int* value_array;
   int num_small_partitions;
   int num_large_partitions;
+  uint8_t *dynamic_value_size;
   // size_t num_existing_items;
   // size_t* existing_items;
 } __attribute__((aligned(128)));  // To prevent false sharing caused by
@@ -126,7 +130,9 @@ class RequestAccessor : public ::mica::processor::RequestAccessorInterface {
   size_t get_value_length(size_t index) {
     assert(index < task_.count);
     (void)index;
-    return task_.value_length; //heejin
+    //heejin) bug?
+    //return task_.value_length;
+    return task_.dynamic_value_size[index];
   }
 
   char* get_out_value(size_t index) {
@@ -148,6 +154,7 @@ class RequestAccessor : public ::mica::processor::RequestAccessorInterface {
   void set_result(size_t index, Result result) {
     assert(index < task_.count);
     (void)index;
+
     if (result == Result::kSuccess) task_.success_count++;
   }
 
@@ -162,6 +169,10 @@ class RequestAccessor : public ::mica::processor::RequestAccessorInterface {
 
   int get_num_large_partitions(void) {
     return task_.num_large_partitions;
+  }
+
+  uint8_t get_dynamic_value_size(int index) {
+    return task_.dynamic_value_size[index];
   }
 
  private:
@@ -218,17 +229,17 @@ void benchmark(double zipf_theta) {
 
   printf("zipf_theta = %lf\n", zipf_theta);
 
-  size_t num_items = 16 * 1048576 / 16;
+  size_t num_items = (16 * 1048576) / 16;
 
   auto config = ::mica::util::Config::load_file("microbench.json");
   uint16_t num_threads =
       static_cast<uint16_t>(config.get("processor").get("lcores").size());
-  size_t num_operations = 16 * 1048576 / 16;
+  size_t num_operations = 16 * 1048576;
   size_t max_num_operations_per_thread = num_operations;
 
   size_t key_length = ::mica::util::roundup<8>(sizeof(uint64_t));
-  size_t value_length = ::mica::util::roundup<8>(sizeof(uint64_t));
-
+  //size_t value_length = ::mica::util::roundup<8>(sizeof(uint64_t));
+  size_t value_length = 1 << 4;
   PartitionsConfig::Alloc alloc(config.get("alloc"));
 
   char* keys =
@@ -254,6 +265,8 @@ void benchmark(double zipf_theta) {
   assert(op_key_hashes);
   char** op_values = new char*[num_threads];
   assert(op_values);
+  uint8_t** op_dynamic_value_size = new uint8_t*[num_threads];
+  assert(op_dynamic_value_size);
 
   for (size_t thread_id = 0; thread_id < num_threads; thread_id++) {
     op_types[thread_id] = reinterpret_cast<uint8_t*>(
@@ -268,6 +281,9 @@ void benchmark(double zipf_theta) {
     op_values[thread_id] = reinterpret_cast<char*>(
         alloc.malloc_contiguous(value_length * num_operations, thread_id));
     assert(op_values[thread_id]);
+    op_dynamic_value_size[thread_id] = reinterpret_cast<uint8_t*>(
+        alloc.malloc_contiguous(value_length * num_operations, thread_id));
+    assert(op_dynamic_value_sizdynamic_value_sizee[thread_id]);
   }
 
   size_t mem_start = alloc.get_memuse();
@@ -332,6 +348,7 @@ void benchmark(double zipf_theta) {
     task.value_array = (int*)malloc(sizeof(int) * max_num_operations_per_thread);
     task.num_small_partitions = num_small_partitions_;
     task.num_large_partitions = num_large_partitions_;
+    task.dynamic_value_size = op_dynamic_value_size[thread_id];
 
     // task.success_count
   }
@@ -496,6 +513,10 @@ void benchmark(double zipf_theta) {
         ::mica::util::memcpy(
             op_values[thread_id] + value_length * op_count[thread_id],
             values + value_length * i, value_length);
+        
+        uint8_t cur_val = rand() % (value_length-1) + 1;
+        op_dynamic_value_size[thread_id][op_count[thread_id]] = cur_val;
+
         op_count[thread_id]++;
       } else
         break;

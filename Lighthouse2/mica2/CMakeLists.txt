@@ -222,6 +222,10 @@ ELSE(LTO)
   ADD_EXECUTABLE(microbench src/mica/test/microbench.cc)
   TARGET_LINK_LIBRARIES(microbench common ${LIBRARIES})
 
+  ADD_EXECUTABLE(microbench_fb src/mica/test/microbench_facebook.cc)
+  TARGET_LINK_LIBRARIES(microbench_fb common ${LIBRARIES})
+
+
   ADD_EXECUTABLE(cdf src/mica/test/cdf.cc)
   TARGET_LINK_LIBRARIES(cdf common ${LIBRARIES})
 
